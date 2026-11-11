@@ -32,7 +32,7 @@ Start with **Segment A**. Each project is worth roughly twice an event job, the 
 
 ## 2. Target list
 
-The 20-company list is in the Google Sheet: **[Google Sheet](https://docs.google.com/spreadsheets/d/1E7NcRLTLXgu5lvW0uXx0v5T9Slt8-Zlv55dLGo85-zE/edit)**.
+The 20-company list is in the Google Sheet: **[Google Sheet link]**.
 
 - 10 Segment A companies and 10 Segment B companies, split between Sydney and Melbourne.
 - Columns: company, website, city, segment, size band, buyer's role (title only, no personal data), timing signal and date, source link, fit score from 1 to 5 with a one-line reason.
