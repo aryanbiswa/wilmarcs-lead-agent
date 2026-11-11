@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% set step = 2 %}
+{% block content %}
+<h1>Researching…</h1>
+<p class="sub">Reading public pages, verifying every quote against its page, scoring and drafting. About 10 seconds per company.</p>
+<div class="panel">
+  <div class="row"><b id="count">{{ m.done }} / {{ m.total }}</b><span class="muted" id="status">{{ m.status }}</span>
+    <span class="spacer"></span><span class="small muted">Skipped as duplicates/invalid: <b id="skipped">{{ m.skipped or 0 }}</b></span></div>
+  <div class="bar" style="margin:10px 0 14px"><i id="bar" style="width:0%"></i></div>
+  <div class="small muted">Working on: <span id="current"></span></div>
+  <div id="err" class="notice red" style="display:none"></div>
+  <table style="margin-top:12px"><thead><tr><th>Company</th><th>Score</th><th>Draft</th><th>Notes</th></tr></thead><tbody id="done"></tbody></table>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+const url = "{{ url_for('run_status', run_id=m.id) }}";
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+async function tick(){
+  try {
+    const m = await (await fetch(url)).json();
+    document.getElementById('count').textContent = `${m.done||0} / ${m.total||0}`;
+    document.getElementById('status').textContent = m.status;
+    document.getElementById('skipped').textContent = m.skipped||0;
+    document.getElementById('bar').style.width = (m.total ? 100*m.done/m.total : 3) + '%';
+    document.getElementById('current').textContent = (m.current||[]).join(', ');
+    document.getElementById('done').innerHTML = (m.finished||[]).slice().reverse().map(f =>
+      `<tr><td>${esc(f.company)}</td><td>${f.score}</td><td>${f.draft?'<span class="chip ok">draft</span>':'<span class="chip warn">none</span>'}</td><td class="small muted">${esc(f.flags)}</td></tr>`).join('');
+    if (m.status === 'done') return location.reload();
+    if (m.status === 'error') { const e=document.getElementById('err'); e.style.display='block'; e.textContent=m.error; return; }
+  } catch(e) {}
+  setTimeout(tick, 1500);
+}
+tick();
+</script>
+{% endblock %}

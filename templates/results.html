@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+{% set step = 2 %}
+{% macro src(url) -%}
+  {%- if url and url.startswith('http') -%}<a href="{{ url }}" target="_blank" rel="noopener" class="small">{{ url|domain }} ↗</a>
+  {%- else -%}<span class="nf small">no source</span>{%- endif -%}
+{%- endmacro %}
+{% macro val(v) -%}{% if not v or v.startswith('Not found') %}<span class="nf">Not found (no source)</span>{% else %}{{ v }}{% endif %}{%- endmacro %}
+{% block content %}
+<div class="row">
+  <div><h1>Research results</h1>
+  <p class="sub">Ranked review list for <b>{{ m.source }}</b> · finished {{ (m.finished_at or '').replace('T',' ') }}. Click a company for its facts, sources, score breakdown, draft and log.</p></div>
+  <span class="spacer"></span>
+  <a class="btn" href="{{ url_for('download', run_id=m.id, kind='review.xlsx') }}">Download review.xlsx</a>
+  <a class="btn" href="{{ url_for('download', run_id=m.id, kind='run_log.jsonl') }}">Run log</a>
+  <a class="btn primary" href="{{ url_for('review_page', run_id=m.id) }}">Edit drafts →</a>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="v">{{ stats.companies }}</div><div class="k">companies researched</div></div>
+  <div class="stat"><div class="v">{{ stats.drafts }}</div><div class="k">sourced drafts</div></div>
+  <div class="stat"><div class="v">{{ stats.companies - stats.drafts }}</div><div class="k">need human research</div></div>
+  <div class="stat"><div class="v">{{ stats.skipped }}</div><div class="k">skipped (duplicate/invalid)</div></div>
+  <div class="stat"><div class="v">{{ stats.sources_read }}</div><div class="k">public pages read</div></div>
+  <div class="stat"><div class="v">{{ stats.pages_failed }}</div><div class="k">pages failed (logged)</div></div>
+</div>
+
+<div class="tabs" data-tabs>
+  <button class="on" data-t="t-list">Ranked list</button>
+  <button data-t="t-log">Full log</button>
+  <button data-t="t-skip">Skipped ({{ skipped|length }})</button>
+  <button data-t="t-rules">How scoring works</button>
+</div>
+
+<section class="tab on" id="t-list">
+<div class="tbl">
+  <div style="display:grid;grid-template-columns:36px 54px minmax(160px,1.3fr) 1.1fr 2fr 92px;gap:10px;padding:9px 12px;background:#fafbfc" class="small muted">
+    <b>#</b><b>Fit</b><b>Company</b><b class="hide-sm">Segment · city</b><b class="hide-sm">Timing signal</b><b>Draft</b></div>
+  {% for r in rows %}
+  {% set d = r._detail or {} %}
+  {% set s = r['Fit score'] or 0 %}
+  <details class="co">
+    <summary>
+      <span class="muted">{{ r.Rank }}</span>
+      <span class="score {{ 's-hi' if s >= 75 else 's-mid' if s >= 50 else 's-lo' }}">{{ s }}</span>
+      <span><b>{{ r.Company }}</b><div class="small muted">{{ r.Website|domain }}</div></span>
+      <span class="hide-sm small">{{ r.Segment or '—' }}<div class="muted">{{ val(r.City) }}</div></span>
+      <span class="hide-sm small">{% if r['Signal date'] %}<span class="chip">{{ r['Signal date'] }}</span> {{ r['Timing signal'] }}{% else %}<span class="nf">No verified, dated signal</span>{% endif %}
+        {% if d.red_flags %}<div><span class="chip bad">red flag</span></div>{% endif %}</span>
+      <span>{% if r['Email subject'] %}<span class="chip ok">ready</span>{% else %}<span class="chip warn">none</span>{% endif %}
+        {% if edits.get(r.Company, {}).get('status') in ('Approve','Reject') %}<span class="chip">{{ edits[r.Company].status }}</span>{% endif %}</span>
+    </summary>
+    <div class="body">
+      <div class="grid g2">
+        <div>
+          <h3>Researched facts</h3>
+          <div class="facts">
+            <div class="k">Industry</div><div>{{ val(r.Industry) }} {{ src(r['Industry source']) }}</div>
+            <div class="k">Size band</div><div>{{ val(r['Size band']) }} {{ src(r['Size source']) }}</div>
+            <div class="k">City</div><div>{{ val(r.City) }} {{ src(r['City source']) }}</div>
+            <div class="k">Segment</div><div>{{ r.Segment or '—' }}</div>
+            <div class="k">Likely buyer</div><div>{{ val(r['Buyer role']) }}</div>
+            <div class="k">Timing signal</div><div>{{ val(r['Timing signal']) }} {% if r['Signal date'] %}<span class="chip">{{ r['Signal date'] }}</span>{% endif %} {{ src(r['Signal source']) }}</div>
+          </div>
+          {% if r['Signal evidence (quote)'] %}<label>Evidence (word-for-word from the source page)</label><div class="quote">{{ r['Signal evidence (quote)'] }}</div>{% endif %}
+          {% for rf in d.red_flags or [] %}<div class="notice red small"><b>Red flag:</b> {{ rf.text }} — {{ src(rf.url) }}</div>{% endfor %}
+
+          <h3 style="margin-top:16px">Fit score {{ s }}/100</h3>
+          <p class="small" style="margin:0 0 8px">{{ r['Fit reason'] }}</p>
+          {% if d.score_parts %}
+          <div class="parts">
+            <div><b>{{ d.score_parts.timing }}</b>timing /35</div><div><b>{{ d.score_parts.segment }}</b>segment /25</div>
+            <div><b>{{ d.score_parts.size }}</b>size /20</div><div><b>{{ d.score_parts.location }}</b>city /10</div>
+            <div><b>{{ d.score_parts.buyer }}</b>buyer /10</div><div><b>{{ d.score_parts.red_flag }}</b>red flag</div>
+          </div>{% endif %}
+        </div>
+        <div>
+          <h3>First email {% if r['Word count'] %}<span class="chip">{{ r['Word count'] }} words</span>{% endif %} {% if r['Suggested film'] %}<span class="chip ok">{{ r['Suggested film'] }}</span>{% endif %}</h3>
+          {% if r['Email subject'] %}<div class="small"><b>Subject:</b> {{ r['Email subject'] }}</div>{% endif %}
+          <div class="email" style="margin-top:6px">{{ r['Email draft'] }}</div>
+          {% if r['Email sources'] %}<label>Sources cited in the email</label><div class="small">{{ r['Email sources']|linkify }}</div>{% endif %}
+          {% if r.Flags %}<label>Flags</label><div class="small">{{ r.Flags }}</div>{% endif %}
+        </div>
+      </div>
+      <h3 style="margin-top:16px">Log for this company</h3>
+      <table class="small">
+        <tr><th>Step</th><th>What</th><th>OK</th><th>Detail</th></tr>
+        {% for e in log_by_company.get(r.Company, []) %}
+        <tr><td>{{ e.step }}{% if e.kind %} <span class="muted">({{ e.kind }})</span>{% endif %}</td>
+            <td style="max-width:520px;word-break:break-all">{% if e.url %}<a href="{{ e.url }}" target="_blank">{{ e.url }}</a>{% else %}{{ e.query or '' }}{% endif %}</td>
+            <td>{{ '✔' if e.ok else '✘' }}</td><td class="muted">{{ e.error or ('%s chars'|format(e.chars) if e.chars else '') }}</td></tr>
+        {% endfor %}
+      </table>
+    </div>
+  </details>
+  {% endfor %}
+</div>
+</section>
+
+<section class="tab" id="t-log">
+  <p class="small muted">Every search, every URL tried (status, characters read, error) and every fact verification dropped.</p>
+  <div class="tbl"><table class="small">
+    <tr><th>Company</th><th>Step</th><th>URL / query</th><th>OK</th><th>Error / detail</th></tr>
+    {% for c, entries in log_by_company.items() %}{% for e in entries %}
+    <tr><td>{{ c }}</td><td>{{ e.step }}</td><td style="max-width:460px;word-break:break-all">{{ e.url or e.query or '' }}</td><td>{{ '✔' if e.ok else '✘' }}</td><td class="muted">{{ e.error or '' }}</td></tr>
+    {% endfor %}{% endfor %}
+  </table></div>
+</section>
+
+<section class="tab" id="t-skip">
+  <div class="tbl"><table>
+    <tr><th>CSV row</th><th>Company</th><th>Website</th><th>Reason</th></tr>
+    {% for s in skipped %}<tr><td>{{ s.row }}</td><td>{{ s.company }}</td><td>{{ s.website }}</td><td>{{ s.reason }}</td></tr>{% else %}<tr><td colspan="4" class="muted">None</td></tr>{% endfor %}
+  </table></div>
+</section>
+
+<section class="tab" id="t-rules">
+  <div class="panel">
+    <table class="small">
+      <tr><th>Part</th><th>Points</th><th>Rule</th></tr>
+      <tr><td>Timing signal</td><td>35</td><td>Upcoming event 2 weeks–6 months away = 35; report/announcement ≤ 3 months old = 35, ≤ 6 months = 28, ≤ 12 months = 15. Past events and anything older are rejected.</td></tr>
+      <tr><td>Segment fit</td><td>25</td><td>Verified ASX listing, or verified event/conference organiser.</td></tr>
+      <tr><td>Size band</td><td>20</td><td>200–5,000 staff = 20 (buys AUD 8–40k films without an agency roster); larger = 10–15; smaller = 5–12.</td></tr>
+      <tr><td>Location</td><td>10</td><td>Sydney 10 (Wilmarcs Sydney team), Melbourne 9, other 5.</td></tr>
+      <tr><td>Buyer clarity</td><td>10</td><td>A signal tells us which function owns the budget.</td></tr>
+      <tr><td>Red flag</td><td>−20</td><td>Sourced takeover, delisting or administration: spend is likely frozen.</td></tr>
+    </table>
+    <p class="small muted">A fact counts only if its word-for-word quote is found on the cited page. Otherwise it shows as "Not found (no source)" and is never used in a draft.</p>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script>
+document.querySelectorAll('[data-tabs] button').forEach(b => b.onclick = () => {
+  document.querySelectorAll('[data-tabs] button').forEach(x => x.classList.toggle('on', x === b));
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('on', t.id === b.dataset.t));
+});
+</script>
+{% endblock %}

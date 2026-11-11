@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% set step = 4 %}
+{% block content %}
+<div class="row">
+  <div><h1>30-day pilot plan</h1>
+  <p class="sub">Work backwards from the Sydney team's capacity. Change any assumption and the numbers update. Download it as the one-page plan.</p></div>
+  <span class="spacer"></span>
+  <a class="btn primary" href="{{ url_for('download', run_id=m.id, kind='pilot_plan.md') }}?{{ request.query_string.decode() }}">Download pilot plan (.md)</a>
+</div>
+
+<div class="grid g2">
+  <form class="panel" method="get">
+    <h3>Assumptions</h3>
+    <div class="grid g2">
+      <div><label>Projects per quarter (capacity)</label><input type="number" name="projects_per_quarter" value="{{ a.projects_per_quarter }}"></div>
+      <div><label>Discovery call → project</label><input type="number" step="1" name="call_to_project" value="{{ (a.call_to_project*100)|round|int }}"> </div>
+      <div><label>Interested reply → call booked (%)</label><input type="number" name="positive_reply_to_call" value="{{ (a.positive_reply_to_call*100)|round|int }}"></div>
+      <div><label>Reply rate per prospect (%)</label><input type="number" step="0.5" name="reply_rate" value="{{ a.reply_rate*100 }}"></div>
+      <div><label>Share of replies that are interested (%)</label><input type="number" name="positive_share" value="{{ (a.positive_share*100)|round|int }}"></div>
+      <div><label>Emails in sequence</label><input type="number" name="sequence_steps" value="{{ a.sequence_steps }}"></div>
+    </div>
+    <p style="margin-top:12px"><button class="btn">Recalculate</button></p>
+    <p class="small muted">Why these rates: timing-signal emails to a named buyer typically reply above generic cold email (1–3%), so 8% reply with half interested is a target, not a given. The pilot's job is to measure the real rates in 30 days.</p>
+  </form>
+
+  <div class="panel">
+    <h3>Targets</h3>
+    <table class="funnel">
+      <tr><th>Stage</th><th>Rate</th><th style="text-align:right">Per quarter</th><th style="text-align:right">Per week</th></tr>
+      <tr><td>New prospects emailed</td><td class="muted">—</td><td class="n">{{ f.quarter.new_prospects|n1 }}</td><td class="n">{{ f.week.new_prospects|n1 }}</td></tr>
+      <tr><td>Emails sent (incl. follow-ups)</td><td class="muted">× {{ '%.2f'|format(f.emails_per_prospect) }}</td><td class="n">{{ f.quarter.emails_sent|n1 }}</td><td class="n">{{ f.week.emails_sent|n1 }}</td></tr>
+      <tr><td>Replies</td><td>{{ a.reply_rate|pct }}</td><td class="n">{{ f.quarter.replies|n1 }}</td><td class="n">{{ f.week.replies|n1 }}</td></tr>
+      <tr><td>Interested replies</td><td>{{ a.positive_share|pct }}</td><td class="n">{{ f.quarter.positive_replies|n1 }}</td><td class="n">{{ f.week.positive_replies|n1 }}</td></tr>
+      <tr><td>Discovery calls</td><td>{{ a.positive_reply_to_call|pct }}</td><td class="n">{{ f.quarter.calls|n1 }}</td><td class="n">{{ f.week.calls|n1 }}</td></tr>
+      <tr><td><b>New projects</b></td><td>{{ a.call_to_project|pct }}</td><td class="n">{{ f.quarter.projects|n1 }}</td><td class="n">{{ f.week.projects|n1 }}</td></tr>
+    </table>
+    <p class="small">Math: {{ a.projects_per_quarter }} projects ÷ {{ a.call_to_project|pct }} = <b>{{ f.quarter.calls|n1 }} calls</b> ÷ {{ a.positive_reply_to_call|pct }} = <b>{{ f.quarter.positive_replies|n1 }} interested replies</b>
+      ÷ ({{ a.reply_rate|pct }} × {{ a.positive_share|pct }}) = <b>{{ f.quarter.new_prospects|n1 }} prospects</b> a quarter, over 13 weeks.
+      That is about <b>{{ f.emails_per_weekday|round|int }} emails a weekday</b>, so <b>{{ f.inboxes_needed }} warmed inboxes</b> at ≤30 a day each.</p>
+  </div>
+</div>
+
+<div class="grid g3" style="margin-top:16px">
+  <div class="panel"><h3>Tools</h3>
+    <ul class="small">
+      <li><b>This tool</b>: weekly research run on ~{{ (f.week.new_prospects * 1.5)|round|int }} companies (about 2 in 3 come back with a sourced signal).</li>
+      <li><b>Instantly</b>: sending, inbox warm-up and rotation, reply tracking, unsubscribe handling.</li>
+      <li><b>HubSpot CRM (free)</b>: pipeline Researched → Emailed → Replied → Call → Proposal → Won.</li>
+      <li><b>Calendly</b>: the 15-minute call link, set to Sydney time.</li>
+    </ul></div>
+  <div class="panel"><h3>Staying out of spam</h3>
+    <ul class="small">
+      <li>Send from a separate domain with SPF, DKIM and DMARC set, warm it up for 2–3 weeks, ≤30 sends per inbox per day.</li>
+      <li>Plain text: no images or attachments, at most one link, open tracking off on the first email.</li>
+      <li>Clean list: role-relevant published addresses only, verified before sending, bounces under 2%, unsubscribes honoured right away.</li>
+    </ul></div>
+  <div class="panel"><h3>Every Monday, report 3 numbers</h3>
+    <ol class="small">
+      <li><b>New prospects emailed</b> (target {{ f.week.new_prospects|round|int }}/week)</li>
+      <li><b>Interested-reply rate</b> (target {{ (a.reply_rate * a.positive_share)|pct }} of prospects)</li>
+      <li><b>Discovery calls booked</b> (target {{ '%.1f'|format(f.week.calls) }}/week)</li>
+    </ol></div>
+</div>
+
+<div class="panel" style="margin-top:16px"><h3>Top 2 risks</h3>
+  <div class="grid g2 small">
+    <div><b>1. Not enough signal-qualified companies.</b> {{ f.week.new_prospects|round|int }} new prospects a week is more than two segments in two cities produce with fresh signals.
+      <i>Response:</i> add a third segment (universities or not-for-profits), add ASX announcements and event-venue calendars (ICC Sydney, MCEC) as sources, and reuse "no signal" companies when they announce something.</div>
+    <div><b>2. Replies come in below 4%</b> (deliverability, or a Bengaluru-founded studio seen as offshore).
+      <i>Response:</i> check domain health and inbox placement first, A/B test subject lines, lead with Sydney presence and 2 local case studies, and add a LinkedIn touch before the follow-up.</div>
+  </div>
+</div>
+
+<h2>Your 5 best drafts {% if not top5 %}<span class="small muted">(tick "Top 5" on the Edit drafts page)</span>{% endif %}</h2>
+{% for d in top5 %}<div class="small">#{{ d.rank }} <b>{{ d.company }}</b>: {{ d.subject }} <span class="chip">{{ d.status }}</span></div>{% endfor %}
+
+<h2>Before / after {% if not showcase %}<span class="small muted">(tick "Before/after" on 2 drafts)</span>{% endif %}</h2>
+{% for d in showcase %}
+<div class="panel" style="margin-bottom:12px">
+  <h3>{{ d.company }}</h3>
+  <div class="editor">
+    <div><label>Before</label><div class="email">{{ d.original_body }}</div></div>
+    <div><label>After</label><div class="email">{{ d.body }}</div></div>
+  </div>
+  <label>What changed and why</label><div class="small">{{ d.note or '—' }}</div>
+</div>
+{% endfor %}
+{% endblock %}

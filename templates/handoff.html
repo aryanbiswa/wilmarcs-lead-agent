@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% set step = 5 %}
+{% block content %}
+<h1>Hand-off to Instantly</h1>
+<p class="sub">Only drafts you marked <b>Approve</b> go here. The tool never sends email and never starts a campaign:
+leads are added to a campaign you created in Instantly, which stays <b>paused</b> until a person launches it.</p>
+
+<div class="notice">The assignment brief says not to send real emails to any company, so for the submission use the CSV export (or push into a paused test campaign).</div>
+
+<div class="grid g2">
+  <div class="panel">
+    <h3>Option A: CSV upload</h3>
+    <p class="small">Columns: email, first_name, company_name, website, subject, body, signal, signal_source, fit_score. In Instantly: Leads → Upload CSV, map
+      <span class="mono">subject</span> and <span class="mono">body</span> to custom variables, and set the sequence step to
+      <span class="mono">{{ '{{subject}}' }}</span> / <span class="mono">{{ '{{body}}' }}</span>.</p>
+    <a class="btn primary" href="{{ url_for('download', run_id=m.id, kind='instantly.csv') }}">Download instantly_leads.csv ({{ approved|length }} approved)</a>
+  </div>
+  <div class="panel">
+    <h3>Option B: push via the Instantly API</h3>
+    {% if not key_ok %}<p class="small muted">Add <span class="mono">INSTANTLY_API_KEY</span> (and optionally <span class="mono">INSTANTLY_CAMPAIGN_ID</span>) to <span class="mono">.env</span> and restart to enable this.</p>{% endif %}
+    <label>Campaign ID (a paused campaign)</label><input type="text" id="cid" value="{{ campaign }}" {{ 'disabled' if not key_ok }}>
+    <div class="row" style="margin-top:10px">
+      <button class="btn" id="push" {{ 'disabled' if not key_ok }}>Add approved leads to campaign</button>
+      <button class="btn" id="stats" {{ 'disabled' if not key_ok }}>Fetch tracking</button>
+    </div>
+    <pre id="out" class="mono small" style="white-space:pre-wrap"></pre>
+  </div>
+</div>
+
+<h2>Approved ({{ approved|length }})</h2>
+<div class="tbl"><table>
+  <tr><th>Company</th><th>Email</th><th>Subject</th><th>Words</th></tr>
+  {% for d in approved %}
+  <tr><td>{{ d.company }}</td><td>{% if d.email %}{{ d.email }}{% else %}<span class="nf small">add on Edit page</span>{% endif %}</td><td>{{ d.subject }}</td><td>{{ d.body.split()|length }}</td></tr>
+  {% else %}<tr><td colspan="4" class="muted">Nothing approved yet. Set Status to Approve on the Edit drafts page.</td></tr>{% endfor %}
+</table></div>
+{% endblock %}
+{% block scripts %}
+<script>
+const out = document.getElementById('out');
+document.getElementById('push')?.addEventListener('click', async () => {
+  out.textContent = 'Adding leads…';
+  const r = await fetch("{{ url_for('instantly_push', run_id=m.id) }}", {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({campaign_id: document.getElementById('cid').value})});
+  out.textContent = JSON.stringify(await r.json(), null, 1);
+});
+document.getElementById('stats')?.addEventListener('click', async () => {
+  out.textContent = 'Fetching…';
+  const r = await fetch("{{ url_for('instantly_analytics', run_id=m.id) }}?campaign_id=" + encodeURIComponent(document.getElementById('cid').value));
+  out.textContent = JSON.stringify(await r.json(), null, 1);
+});
+</script>
+{% endblock %}

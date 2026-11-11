@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% set step = 1 %}
+{% block content %}
+<h1>Find Australian companies at the right moment</h1>
+<p class="sub">Upload the Task 2 list (company, website). The tool reads each company's public pages, finds a dated timing signal,
+scores fit and drafts a first email in which every fact links to its source. Nothing is sent.</p>
+
+{% if not key_ok %}<div class="notice red">GEMINI_API_KEY is not set. Add it to <span class="mono">.env</span> and restart.</div>{% endif %}
+
+<div class="grid g2">
+  <form class="panel" method="post" action="{{ url_for('create_run') }}" enctype="multipart/form-data">
+    <h3>Start a research run</h3>
+    <label>Company CSV (columns: company, website)</label>
+    <input type="file" name="csv" accept=".csv">
+    <p class="small muted">Leave empty to use the Task 2 list below.</p>
+    <div class="grid g2">
+      <div><label>Only first N companies (0 = all)</label><input type="number" name="limit" value="0" min="0"></div>
+      <div><label>&nbsp;</label><label style="font-weight:500"><input type="checkbox" name="fresh"> Ignore cache (re-research from scratch)</label></div>
+    </div>
+    <p style="margin-top:14px"><button class="btn primary" {{ 'disabled' if not key_ok }}>Run research</button></p>
+  </form>
+
+  <div class="panel">
+    <h3>Previous runs</h3>
+    {% if not runs %}<p class="muted">No runs yet.</p>{% endif %}
+    <table>
+      {% for r in runs[:8] %}
+      <tr>
+        <td><a href="{{ url_for('run_page', run_id=r.id) }}">{{ r.created.replace('T', ' ') }}</a><div class="small muted">{{ r.source }}</div></td>
+        <td class="small">{{ r.done }}/{{ r.total }} companies{% if r.drafts is defined %} · {{ r.drafts }} drafts{% endif %}</td>
+        <td><span class="chip {{ 'ok' if r.status == 'done' else 'bad' if r.status == 'error' else 'warn' }}">{{ r.status }}</span></td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+
+{% if sample %}
+<h2>Task 2 list ({{ sample|length }} rows)</h2>
+<div class="tbl"><table>
+  <tr><th>#</th><th>Company</th><th>Website</th></tr>
+  {% for s in sample %}<tr><td class="muted">{{ loop.index }}</td><td>{{ s.company }}</td><td><a href="{{ s.website }}" target="_blank">{{ s.website|domain }}</a></td></tr>{% endfor %}
+</table></div>
+<p class="small muted">The last two rows are deliberate tests: a duplicate (must be skipped) and a dead website (must be logged, not crash).</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,425 @@
+{"company": "Pinnacle Investment Management Group", "step": "fetch", "kind": "site:home", "url": "https://pinnacleinvestment.com", "ok": true, "status": 200, "chars": 1185, "cached": true, "error": ""}
+{"company": "Pinnacle Investment Management Group", "step": "search", "query": "Pinnacle Investment Management Group conference summit 2026 2027", "ok": true}
+{"company": "Pinnacle Investment Management Group", "step": "search", "query": "Pinnacle Investment Management Group sustainability impact report 2026", "ok": true}
+{"company": "Pinnacle Investment Management Group", "step": "search", "query": "Pinnacle Investment Management Group rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Pinnacle Investment Management Group", "step": "search", "query": "Pinnacle Investment Management Group Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Pinnacle Investment Management Group", "step": "search", "query": "news: Pinnacle Investment Management Group Australia", "ok": true}
+{"company": "Pinnacle Investment Management Group", "step": "fetch", "kind": "site", "url": "https://pinnacleinvestment.com/pinnacle-summit-2026", "ok": true, "status": 200, "chars": 908, "cached": true, "error": ""}
+{"company": "Pinnacle Investment Management Group", "step": "fetch", "kind": "site", "url": "https://pinnacleinvestment.com/eu/news", "ok": true, "status": 200, "chars": 3401, "cached": true, "error": ""}
+{"company": "Pinnacle Investment Management Group", "step": "fetch", "kind": "site", "url": "https://pinnacleinvestment.com/usa/news", "ok": true, "status": 200, "chars": 3334, "cached": true, "error": ""}
+{"company": "Pinnacle Investment Management Group", "step": "fetch", "kind": "site", "url": "https://pinnacleinvestment.com/insights", "ok": true, "status": 200, "chars": 1654, "cached": true, "error": ""}
+{"company": "Pinnacle Investment Management Group", "step": "fetch", "kind": "site", "url": "https://pinnacleinvestment.com/ca/news-insights", "ok": true, "status": 200, "chars": 2874, "cached": true, "error": ""}
+{"company": "Pinnacle Investment Management Group", "step": "fetch", "kind": "search", "url": "https://pinnacleinvestment.com/", "ok": false, "status": 200, "chars": 1185, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Pinnacle Investment Management Group", "step": "fetch", "kind": "search", "url": "https://pinnacleinvestment.com/pinnacle-summit-2026/", "ok": false, "status": 200, "chars": 908, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Pinnacle Investment Management Group", "step": "fetch", "kind": "search", "url": "https://pinnacleinvestment.com/wp-content/uploads/Pinnacle-Sustainability-Report-2026.pdf", "ok": true, "status": 200, "chars": 44542, "cached": true, "error": ""}
+{"company": "Pinnacle Investment Management Group", "step": "fetch", "kind": "search", "url": "https://pinnacleinvestment.com/wp-content/uploads/Sustainability-Report.pdf", "ok": true, "status": 200, "chars": 41993, "cached": true, "error": ""}
+{"company": "Pinnacle Investment Management Group", "step": "fetch", "kind": "search", "url": "https://pinnacleinvestment.com/fy2026-results-investor-call/", "ok": true, "status": 200, "chars": 864, "cached": true, "error": ""}
+{"company": "Pinnacle Investment Management Group", "step": "fetch", "kind": "search", "url": "https://www.moneymanagement.com.au/international-clients-dominate-at-pinnacle-seeking-further-offshore-affiliates/", "ok": true, "status": 200, "chars": 4175, "cached": true, "error": ""}
+{"company": "Pinnacle Investment Management Group", "step": "fetch", "kind": "search", "url": "https://kalkine.com.au/news/announcements/pinnacle-investment-management-issues-125000-shares-to-kmp-andrew-chambers-at-1549", "ok": true, "status": 200, "chars": 3916, "cached": true, "error": ""}
+{"company": "Pinnacle Investment Management Group", "step": "llm", "ok": true, "query": "extraction 0.3s"}
+{"company": "Pinnacle Investment Management Group", "step": "verify", "ok": false, "error": "signal (sustainability_report): quote not found on https://pinnacleinvestment.com/wp-content/uploads/Pinnacle-Sustainability-Report-2026.pdf; dropped"}
+{"company": "Pinnacle Investment Management Group", "step": "score", "ok": true, "error": "", "query": "{'timing': 35, 'segment': 25, 'size': 10, 'location': 2, 'buyer': 10, 'red_flag': 0}"}
+{"company": "Pinnacle Investment Management Group", "step": "draft", "ok": true, "query": "attempts=1", "error": ""}
+{"company": "Pinnacle Investment Management Group", "step": "done", "ok": true, "query": "6.4s, 11 sources read"}
+{"company": "Ingenia Communities Group", "step": "fetch", "kind": "site:home", "url": "https://www.ingeniacommunities.com.au", "ok": true, "status": 200, "chars": 1096, "cached": true, "error": ""}
+{"company": "Ingenia Communities Group", "step": "search", "query": "Ingenia Communities Group conference summit 2026 2027", "ok": true}
+{"company": "Ingenia Communities Group", "step": "search", "query": "Ingenia Communities Group sustainability impact report 2026", "ok": true}
+{"company": "Ingenia Communities Group", "step": "search", "query": "Ingenia Communities Group rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Ingenia Communities Group", "step": "search", "query": "Ingenia Communities Group Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Ingenia Communities Group", "step": "search", "query": "news: Ingenia Communities Group Australia", "ok": true}
+{"company": "Ingenia Communities Group", "step": "fetch", "kind": "site", "url": "https://www.ingeniacommunities.com.au/sustainability/social/community-engagement-and-impact", "ok": true, "status": 200, "chars": 5466, "cached": true, "error": ""}
+{"company": "Ingenia Communities Group", "step": "fetch", "kind": "site", "url": "https://www.ingeniacommunities.com.au/investor-centre/asx-announcements-and-reports", "ok": true, "status": 200, "chars": 1157, "cached": true, "error": ""}
+{"company": "Ingenia Communities Group", "step": "fetch", "kind": "site", "url": "https://www.ingeniacommunities.com.au/documents/files?url=https%3A%2F%2Fapp.sharelinktechnologies.com%2Fannouncement-preview%2Fasx%2Ffd99cdfec37d310f99c3f91f1a88c30e&title=Response%20to%20media%20speculation", "ok": true, "status": 200, "chars": 81, "cached": true, "error": ""}
+{"company": "Ingenia Communities Group", "step": "fetch", "kind": "site", "url": "https://www.ingeniacommunities.com.au/documents/files?url=https%3A%2F%2Fapp.sharelinktechnologies.com%2Fannouncement-preview%2Fasx%2F94e0259e6b351d2faee58b8f25ceb4b0&title=Response%20to%20media%20speculation", "ok": false, "status": 200, "chars": 81, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Ingenia Communities Group", "step": "fetch", "kind": "site", "url": "https://www.ingeniacommunities.com.au/documents/files?url=https%3A%2F%2Fapp.sharelinktechnologies.com%2Fannouncement-preview%2Fasx%2F7d2bbfd839813168eb0f998284e3bdcd&title=Response%20to%20media%20speculation", "ok": false, "status": 200, "chars": 81, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Ingenia Communities Group", "step": "fetch", "kind": "search", "url": "https://www.ingeniacommunities.com.au/", "ok": false, "status": 200, "chars": 1096, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Ingenia Communities Group", "step": "fetch", "kind": "search", "url": "https://www.ingeniacommunities.com.au/investor-centre/agm", "ok": true, "status": 200, "chars": 677, "cached": true, "error": ""}
+{"company": "Ingenia Communities Group", "step": "fetch", "kind": "search", "url": "https://www.ingeniacommunities.com.au/documents/2026/2026-annual-report", "ok": true, "status": 200, "chars": 59, "cached": true, "error": ""}
+{"company": "Ingenia Communities Group", "step": "fetch", "kind": "search", "url": "https://www.ingeniacommunities.com.au/sustainability", "ok": true, "status": 200, "chars": 1480, "cached": true, "error": ""}
+{"company": "Ingenia Communities Group", "step": "fetch", "kind": "search", "url": "https://www.ingeniacommunities.com.au/investor-centre/events", "ok": true, "status": 200, "chars": 3070, "cached": true, "error": ""}
+{"company": "Ingenia Communities Group", "step": "fetch", "kind": "search", "url": "https://www.marketscreener.com/news/ingenia-communities-group-gets-revised-warburg-pincus-bid-of-au-5-55-per-security-ce785fdddd8df522", "ok": false, "status": 403, "chars": 0, "cached": false, "error": "HTTP 403"}
+{"company": "Ingenia Communities Group", "step": "fetch", "kind": "search", "url": "https://www.mingtiandi.com/real-estate/finance/warburg-pincus-lifts-ingenia-bid-to-1-6b-ramping-up-bidding-war-with-brookfield/", "ok": true, "status": 200, "chars": 5241, "cached": true, "error": ""}
+{"company": "Ingenia Communities Group", "step": "llm", "ok": true, "query": "extraction 0.0s"}
+{"company": "Ingenia Communities Group", "step": "score", "ok": true, "error": "", "query": "{'timing': 18, 'segment': 25, 'size': 5, 'location': 10, 'buyer': 10, 'red_flag': -20}"}
+{"company": "Ingenia Communities Group", "step": "draft", "ok": true, "query": "attempts=1", "error": ""}
+{"company": "Ingenia Communities Group", "step": "done", "ok": true, "query": "10.4s, 9 sources read"}
+{"company": "Breville Group", "step": "fetch", "kind": "site:home", "url": "https://www.brevillegroup.com", "ok": true, "status": 200, "chars": 347, "cached": true, "error": ""}
+{"company": "Breville Group", "step": "search", "query": "Breville Group conference summit 2026 2027", "ok": true}
+{"company": "Breville Group", "step": "search", "query": "Breville Group sustainability impact report 2026", "ok": true}
+{"company": "Breville Group", "step": "search", "query": "Breville Group rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Breville Group", "step": "search", "query": "Breville Group Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Breville Group", "step": "search", "query": "news: Breville Group Australia", "ok": true}
+{"company": "Breville Group", "step": "fetch", "kind": "site", "url": "https://brevillegroup.com/wp-content/uploads/2025/08/Year-Ended-30-June-2025-Report-Announcement.pdf", "ok": true, "status": 200, "chars": 12904, "cached": true, "error": ""}
+{"company": "Breville Group", "step": "fetch", "kind": "site", "url": "https://brevillegroup.com/wp-content/uploads/2026/03/Half-Year-Ended-31-December-2025-Report-Announcement.pdf", "ok": true, "status": 200, "chars": 10592, "cached": true, "error": ""}
+{"company": "Breville Group", "step": "fetch", "kind": "site", "url": "https://brevillegroup.com/wp-content/uploads/2026/08/Notice-of-FY26-Full-Year-Results-and-Conference-Call.pdf", "ok": true, "status": 200, "chars": 1049, "cached": true, "error": ""}
+{"company": "Breville Group", "step": "fetch", "kind": "site", "url": "https://brevillegroup.com/wp-content/uploads/2026/01/Notice-of-FY26-First-Half-Result-and-Conference-Call.pdf", "ok": true, "status": 200, "chars": 1067, "cached": true, "error": ""}
+{"company": "Breville Group", "step": "fetch", "kind": "site", "url": "https://brevillegroup.com/about", "ok": true, "status": 200, "chars": 2335, "cached": true, "error": ""}
+{"company": "Breville Group", "step": "fetch", "kind": "search", "url": "https://brevillegroup.com/wp-content/uploads/2026/08/Annual-Report-2026.pdf", "ok": true, "status": 200, "chars": 60000, "cached": true, "error": ""}
+{"company": "Breville Group", "step": "fetch", "kind": "search", "url": "https://brevillegroup.com/wp-content/uploads/2026/08/Year-Ended-30-June-2026-Report-Announcement.pdf", "ok": true, "status": 200, "chars": 13060, "cached": true, "error": ""}
+{"company": "Breville Group", "step": "fetch", "kind": "search", "url": "https://brevillegroup.com/wp-content/uploads/2026/08/Year-Ended-30-June-2026-Investor-Presentation.pdf", "ok": true, "status": 200, "chars": 9803, "cached": true, "error": ""}
+{"company": "Breville Group", "step": "fetch", "kind": "search", "url": "https://seekingalpha.com/article/4962927-breville-group-limited-bvily-shareholder-analyst-call-prepared-remarks-transcript", "ok": true, "status": 200, "chars": 1795, "cached": true, "error": ""}
+{"company": "Breville Group", "step": "fetch", "kind": "search", "url": "https://kalkine.com.au/news/announcements/challenger-limited-ceases-to-be-substantial-holder-in-breville-group", "ok": false, "status": 403, "chars": 0, "cached": false, "error": "HTTP 403"}
+{"company": "Breville Group", "step": "fetch", "kind": "search", "url": "https://kalkine.com.au/stock-analysis/consumer/how-is-breville-group-asxbrg-defending-margins-through-tariffs-and-a-weaker-us-dollar", "ok": false, "status": 403, "chars": 0, "cached": false, "error": "HTTP 403"}
+{"company": "Breville Group", "step": "fetch", "kind": "search", "url": "https://kalkine.com.au/news/consumer/jb-hi-fi-breville-and-super-retail-fy26-results-why-did-profits-diverge", "ok": false, "status": 403, "chars": 0, "cached": false, "error": "HTTP 403"}
+{"company": "Breville Group", "step": "llm", "ok": true, "query": "extraction 0.3s"}
+{"company": "Breville Group", "step": "score", "ok": true, "error": "", "query": "{'timing': 15, 'segment': 25, 'size': 10, 'location': 10, 'buyer': 10, 'red_flag': 0}"}
+{"company": "Breville Group", "step": "draft", "ok": true, "query": "attempts=1", "error": ""}
+{"company": "Breville Group", "step": "done", "ok": true, "query": "16.3s, 10 sources read"}
+{"company": "Metcash", "step": "fetch", "kind": "site:home", "url": "https://www.metcash.com", "ok": true, "status": 200, "chars": 732, "cached": true, "error": ""}
+{"company": "Metcash", "step": "search", "query": "Metcash conference summit 2026 2027", "ok": true}
+{"company": "Metcash", "step": "search", "query": "Metcash sustainability impact report 2026", "ok": true}
+{"company": "Metcash", "step": "search", "query": "Metcash rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Metcash", "step": "search", "query": "Metcash Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Metcash", "step": "search", "query": "news: Metcash Australia", "ok": true}
+{"company": "Metcash", "step": "fetch", "kind": "site", "url": "https://www.metcash.com/about-us/news-and-case-studies/corporate-social-responsibility-case-studies", "ok": true, "status": 200, "chars": 3922, "cached": true, "error": ""}
+{"company": "Metcash", "step": "fetch", "kind": "site", "url": "https://www.metcash.com/about-us/latest-news", "ok": true, "status": 200, "chars": 2596, "cached": true, "error": ""}
+{"company": "Metcash", "step": "fetch", "kind": "site", "url": "https://www.metcash.com/about-us/news-and-case-studies", "ok": true, "status": 200, "chars": 1360, "cached": true, "error": ""}
+{"company": "Metcash", "step": "fetch", "kind": "site", "url": "https://www.metcash.com/about-us/news-and-case-studies/case-studies", "ok": true, "status": 200, "chars": 1263, "cached": true, "error": ""}
+{"company": "Metcash", "step": "fetch", "kind": "site", "url": "https://www.metcash.com/about-us/news-and-case-studies/case-studies/best-store-town", "ok": true, "status": 200, "chars": 7823, "cached": true, "error": ""}
+{"company": "Metcash", "step": "fetch", "kind": "search", "url": "https://www.metcash.com/investor-centre/results-disclosure/events-and-presentations/", "ok": true, "status": 200, "chars": 527, "cached": true, "error": ""}
+{"company": "Metcash", "step": "fetch", "kind": "search", "url": "https://www.metcash.com/", "ok": false, "status": 200, "chars": 732, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Metcash", "step": "fetch", "kind": "search", "url": "https://expo.metcash.com/", "ok": false, "status": null, "chars": 0, "cached": false, "error": "SSLError: HTTPSConnectionPool(host='expo.metcash.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIF"}
+{"company": "Metcash", "step": "fetch", "kind": "search", "url": "https://www.metcash.com/wp-content/uploads/2026/09/Metcash_ESG26_Final.pdf", "ok": true, "status": 200, "chars": 50521, "cached": true, "error": ""}
+{"company": "Metcash", "step": "fetch", "kind": "search", "url": "https://www.metcash.com/sustainability/", "ok": true, "status": 200, "chars": 3311, "cached": true, "error": ""}
+{"company": "Metcash", "step": "fetch", "kind": "search", "url": "https://www.metcash.com/wp-content/uploads/2026/06/Metcash-Limited-FY26-Results.pdf", "ok": true, "status": 200, "chars": 14496, "cached": true, "error": ""}
+{"company": "Metcash", "step": "fetch", "kind": "search", "url": "https://www.metcash.com/investor-centre/2026-agm/", "ok": true, "status": 200, "chars": 2032, "cached": true, "error": ""}
+{"company": "Metcash", "step": "llm", "ok": true, "query": "extraction 0.2s"}
+{"company": "Metcash", "step": "score", "ok": true, "error": "", "query": "{'timing': 35, 'segment': 25, 'size': 5, 'location': 10, 'buyer': 10, 'red_flag': 0}"}
+{"company": "Metcash", "step": "draft", "ok": true, "query": "attempts=1", "error": ""}
+{"company": "Metcash", "step": "done", "ok": true, "query": "13.7s, 11 sources read"}
+{"company": "Perpetual", "step": "fetch", "kind": "site:home", "url": "https://www.perpetual.com.au", "ok": true, "status": 200, "chars": 3177, "cached": true, "error": ""}
+{"company": "Perpetual", "step": "search", "query": "Perpetual conference summit 2026 2027", "ok": true}
+{"company": "Perpetual", "step": "search", "query": "Perpetual sustainability impact report 2026", "ok": true}
+{"company": "Perpetual", "step": "search", "query": "Perpetual rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Perpetual", "step": "search", "query": "Perpetual Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Perpetual", "step": "search", "query": "news: Perpetual Australia", "ok": true}
+{"company": "Perpetual", "step": "fetch", "kind": "site", "url": "https://www.perpetual.com.au/sustainability/archive", "ok": true, "status": 200, "chars": 1711, "cached": true, "error": ""}
+{"company": "Perpetual", "step": "fetch", "kind": "site", "url": "https://www.perpetual.com.au/about/media-centre", "ok": true, "status": 200, "chars": 2181, "cached": true, "error": ""}
+{"company": "Perpetual", "step": "fetch", "kind": "site", "url": "https://www.perpetual.com.au/sustainability", "ok": true, "status": 200, "chars": 2146, "cached": true, "error": ""}
+{"company": "Perpetual", "step": "fetch", "kind": "site", "url": "https://www.perpetual.com.au/insights/?category=30", "ok": false, "status": 200, "chars": 1711, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Perpetual", "step": "fetch", "kind": "site", "url": "https://www.perpetual.com.au/sustainability/responsible-investing", "ok": true, "status": 200, "chars": 6206, "cached": true, "error": ""}
+{"company": "Perpetual", "step": "fetch", "kind": "search", "url": "https://www.perpetual.com.au/4a7ba6/globalassets/_au-site-media/01-documents/04-group/03-sustainability/2026/fy26-sustainability-report---typeset---final---for-publication.pdf", "ok": true, "status": 200, "chars": 13685, "cached": true, "error": ""}
+{"company": "Perpetual", "step": "fetch", "kind": "search", "url": "https://kalkine.com.au/news/announcements/perpetual-credit-income-trust-reports-nta-of-1092-per-unit-as-at-6-november-2026", "ok": false, "status": 403, "chars": 0, "cached": false, "error": "HTTP 403"}
+{"company": "Perpetual", "step": "fetch", "kind": "search", "url": "https://kalkine.com.au/news/announcements/perpetual-equity-investment-company-reports-nta-backing-of-1173-per-share-as-at-5-november-2026", "ok": false, "status": 403, "chars": 0, "cached": false, "error": "HTTP 403"}
+{"company": "Perpetual", "step": "fetch", "kind": "search", "url": "https://www.tipranks.com/news/company-announcements/perpetual-wins-strong-shareholder-backing-at-2026-agm", "ok": true, "status": 200, "chars": 1429, "cached": true, "error": ""}
+{"company": "Perpetual", "step": "fetch", "kind": "search", "url": "https://kalkine.com.au/news/announcements/perpetual-credit-income-trust-reports-nta-of-1098-per-unit-as-at-28-october-2026", "ok": false, "status": 403, "chars": 0, "cached": false, "error": "HTTP 403"}
+{"company": "Perpetual", "step": "fetch", "kind": "search", "url": "https://www.tipranks.com/news/company-announcements/perpetual-equity-reports-nta-backing-near-1-15-per-share", "ok": false, "status": 403, "chars": 0, "cached": false, "error": "HTTP 403"}
+{"company": "Perpetual", "step": "fetch", "kind": "search", "url": "https://financialnewswire.com.au/managed-accounts/corporate-trust-now-perpetual-growth-engine/", "ok": true, "status": 200, "chars": 2032, "cached": true, "error": ""}
+{"company": "Perpetual", "step": "llm", "ok": true, "query": "extraction 0.1s"}
+{"company": "Perpetual", "step": "verify", "ok": false, "error": "signal (sustainability_report, 2025-09-19): over a year old; not used"}
+{"company": "Perpetual", "step": "score", "ok": true, "error": "", "query": "{'timing': 15, 'segment': 25, 'size': 10, 'location': 10, 'buyer': 10, 'red_flag': 0}"}
+{"company": "Perpetual", "step": "draft", "ok": true, "query": "attempts=1", "error": ""}
+{"company": "Perpetual", "step": "done", "ok": true, "query": "15.1s, 8 sources read"}
+{"company": "Orora", "step": "fetch", "kind": "site:home", "url": "https://www.ororagroup.com", "ok": true, "status": 200, "chars": 1527, "cached": true, "error": ""}
+{"company": "Orora", "step": "search", "query": "Orora conference summit 2026 2027", "ok": true}
+{"company": "Orora", "step": "search", "query": "Orora sustainability impact report 2026", "ok": true}
+{"company": "Orora", "step": "search", "query": "Orora rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Orora", "step": "search", "query": "Orora Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Orora", "step": "search", "query": "news: Orora Australia", "ok": true}
+{"company": "Orora", "step": "fetch", "kind": "site", "url": "https://www.ororagroup.com/news/orora-s-full-year-financial-results-2026", "ok": true, "status": 200, "chars": 3647, "cached": true, "error": ""}
+{"company": "Orora", "step": "fetch", "kind": "site", "url": "https://www.ororagroup.com/news/orora-announces-update-on-company-secretary-role", "ok": true, "status": 200, "chars": 1593, "cached": true, "error": ""}
+{"company": "Orora", "step": "fetch", "kind": "site", "url": "https://www.ororagroup.com/news/orora-celebrates-50-years-of-can-manufacturing-at-revesby", "ok": true, "status": 200, "chars": 4060, "cached": true, "error": ""}
+{"company": "Orora", "step": "fetch", "kind": "site", "url": "https://www.ororagroup.com/sustainability", "ok": true, "status": 200, "chars": 2517, "cached": true, "error": ""}
+{"company": "Orora", "step": "fetch", "kind": "site", "url": "https://www.ororagroup.com/news", "ok": true, "status": 200, "chars": 7539, "cached": true, "error": ""}
+{"company": "Orora", "step": "fetch", "kind": "search", "url": "https://www.ororagroup.com/investors/downloads/annual-general-meeting", "ok": true, "status": 200, "chars": 8073, "cached": true, "error": ""}
+{"company": "Orora", "step": "fetch", "kind": "search", "url": "https://www.ororagroup.com/investors/downloads/financial-results", "ok": true, "status": 200, "chars": 16297, "cached": true, "error": ""}
+{"company": "Orora", "step": "fetch", "kind": "search", "url": "https://www.ororagroup.com/system/downloads/files/000/001/302/original/Orora_Annual_Report_2026.pdf", "ok": true, "status": 200, "chars": 56446, "cached": true, "error": ""}
+{"company": "Orora", "step": "fetch", "kind": "search", "url": "https://www.ororagroup.com/system/downloads/files/000/001/298/original/3102196.pdf?1786574150", "ok": true, "status": 200, "chars": 55383, "cached": true, "error": ""}
+{"company": "Orora", "step": "fetch", "kind": "search", "url": "https://www.msn.com/en-au/money/other/orora-fy26-earnings-cans-strong-glass-under-pressure/ar-AA2eb4LE?ocid=BingNewsVerp", "ok": true, "status": 200, "chars": 3, "cached": true, "error": ""}
+{"company": "Orora", "step": "fetch", "kind": "search", "url": "https://kalkine.com.au/news/announcements/orora-limited-buys-back-31911-shares-on-28-october-2026-in-on-market-programme", "ok": false, "status": 403, "chars": 0, "cached": false, "error": "HTTP 403"}
+{"company": "Orora", "step": "fetch", "kind": "search", "url": "https://www.tipranks.com/news/company-announcements/orora-confronts-saverglass-headwinds-as-cans-business-delivers-strong-fy26", "ok": true, "status": 200, "chars": 2033, "cached": true, "error": ""}
+{"company": "Orora", "step": "llm", "ok": true, "query": "extraction 1.1s"}
+{"company": "Orora", "step": "score", "ok": true, "error": "", "query": "{'timing': 35, 'segment': 25, 'size': 20, 'location': 5, 'buyer': 10, 'red_flag': 0}"}
+{"company": "Orora", "step": "draft", "ok": true, "query": "attempts=1", "error": ""}
+{"company": "Orora", "step": "done", "ok": true, "query": "12.0s, 12 sources read"}
+{"company": "Cleanaway Waste Management", "step": "fetch", "kind": "site:home", "url": "https://www.cleanaway.com.au", "ok": true, "status": 200, "chars": 2010, "cached": true, "error": ""}
+{"company": "Cleanaway Waste Management", "step": "search", "query": "Cleanaway Waste Management conference summit 2026 2027", "ok": true}
+{"company": "Cleanaway Waste Management", "step": "search", "query": "Cleanaway Waste Management sustainability impact report 2026", "ok": true}
+{"company": "Cleanaway Waste Management", "step": "search", "query": "Cleanaway Waste Management rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Cleanaway Waste Management", "step": "search", "query": "Cleanaway Waste Management Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Cleanaway Waste Management", "step": "search", "query": "news: Cleanaway Waste Management Australia", "ok": true}
+{"company": "Cleanaway Waste Management", "step": "fetch", "kind": "site", "url": "https://www.cleanaway.com.au/sustainability-performance", "ok": true, "status": 200, "chars": 3351, "cached": true, "error": ""}
+{"company": "Cleanaway Waste Management", "step": "fetch", "kind": "site", "url": "https://www.cleanaway.com.au/investors/asx-announcements", "ok": true, "status": 200, "chars": 918, "cached": true, "error": ""}
+{"company": "Cleanaway Waste Management", "step": "fetch", "kind": "site", "url": "https://www.cleanaway.com.au/sustainability", "ok": true, "status": 200, "chars": 8091, "cached": true, "error": ""}
+{"company": "Cleanaway Waste Management", "step": "fetch", "kind": "site", "url": "https://www.cleanaway.com.au/sustainable-future-possible", "ok": true, "status": 200, "chars": 1745, "cached": true, "error": ""}
+{"company": "Cleanaway Waste Management", "step": "fetch", "kind": "site", "url": "https://www.cleanaway.com.au/investors/reports-and-presentations", "ok": true, "status": 200, "chars": 861, "cached": true, "error": ""}
+{"company": "Cleanaway Waste Management", "step": "fetch", "kind": "search", "url": "https://www.cleanaway.com.au/newsroom/1hfy26-results", "ok": true, "status": 200, "chars": 11119, "cached": true, "error": ""}
+{"company": "Cleanaway Waste Management", "step": "fetch", "kind": "search", "url": "https://www.cleanaway.com.au/", "ok": false, "status": 200, "chars": 2010, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Cleanaway Waste Management", "step": "fetch", "kind": "search", "url": "https://www.cleanaway.com.au/location/melbourne", "ok": true, "status": 200, "chars": 1180, "cached": true, "error": ""}
+{"company": "Cleanaway Waste Management", "step": "fetch", "kind": "search", "url": "https://finance.yahoo.com/news/cleanaway-waste-management-limiteds-asx-010915876.html", "ok": true, "status": 200, "chars": 2587, "cached": true, "error": ""}
+{"company": "Cleanaway Waste Management", "step": "fetch", "kind": "search", "url": "https://finance.yahoo.com/news/those-invested-cleanaway-waste-management-233008725.html", "ok": true, "status": 200, "chars": 3104, "cached": true, "error": ""}
+{"company": "Cleanaway Waste Management", "step": "fetch", "kind": "search", "url": "https://finance.yahoo.com/news/cleanaway-waste-management-first-half-200627368.html", "ok": true, "status": 200, "chars": 1724, "cached": true, "error": ""}
+{"company": "Cleanaway Waste Management", "step": "fetch", "kind": "search", "url": "https://finance.yahoo.com/news/cleanaway-waste-management-asx-cwy-035136854.html", "ok": true, "status": 200, "chars": 2988, "cached": true, "error": ""}
+{"company": "Cleanaway Waste Management", "step": "llm", "ok": true, "query": "extraction 0.2s"}
+{"company": "Cleanaway Waste Management", "step": "verify", "ok": false, "error": "signal (anniversary): date 1950 not stated near the quote; treated as undated"}
+{"company": "Cleanaway Waste Management", "step": "verify", "ok": false, "error": "signal (anniversary, 1950): undated; not used"}
+{"company": "Cleanaway Waste Management", "step": "score", "ok": true, "error": "", "query": "{'timing': 0, 'segment': 25, 'size': 15, 'location': 9, 'buyer': 5, 'red_flag': 0}"}
+{"company": "Cleanaway Waste Management", "step": "done", "ok": true, "query": "4.4s, 12 sources read"}
+{"company": "Bapcor", "step": "fetch", "kind": "site:home", "url": "https://www.bapcor.com.au", "ok": false, "status": 200, "chars": 0, "cached": false, "error": "no readable text on page"}
+{"company": "Bapcor", "step": "search", "query": "Bapcor conference summit 2026 2027", "ok": true}
+{"company": "Bapcor", "step": "search", "query": "Bapcor sustainability impact report 2026", "ok": true}
+{"company": "Bapcor", "step": "search", "query": "Bapcor rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Bapcor", "step": "search", "query": "Bapcor Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Bapcor", "step": "search", "query": "news: Bapcor Australia", "ok": true}
+{"company": "Bapcor", "step": "fetch", "kind": "search", "url": "http://www.bapcor.com.au/", "ok": true, "status": 200, "chars": 83, "cached": true, "error": ""}
+{"company": "Bapcor", "step": "fetch", "kind": "search", "url": "https://www.bapcor.com.au/annual-interim-reports", "ok": true, "status": 200, "chars": 82, "cached": true, "error": ""}
+{"company": "Bapcor", "step": "fetch", "kind": "search", "url": "http://www.bapcor.com.au/Reports/2026_Annual_Report.pdf", "ok": true, "status": 200, "chars": 34280, "cached": true, "error": ""}
+{"company": "Bapcor", "step": "fetch", "kind": "search", "url": "https://www.bapcor.com.au/Reports/2026_Annual_Report.pdf", "ok": false, "status": 200, "chars": 34280, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Bapcor", "step": "fetch", "kind": "search", "url": "https://kalkine.com.au/stock-analysis/consumer/bapcor-ltd-asxbap-what-did-its-trading-update-reveal-about-debt-and-operations", "ok": false, "status": 403, "chars": 0, "cached": false, "error": "HTTP 403"}
+{"company": "Bapcor", "step": "fetch", "kind": "search", "url": "https://www.tipranks.com/news/company-announcements/bapcor-director-kate-spargo-increases-shareholding", "ok": true, "status": 200, "chars": 2197, "cached": true, "error": ""}
+{"company": "Bapcor", "step": "fetch", "kind": "search", "url": "https://kalkine.com.au/news/announcements/pinnacle-investment-management-lifts-bapcor-stake-to-921-from-682", "ok": false, "status": 403, "chars": 0, "cached": false, "error": "HTTP 403"}
+{"company": "Bapcor", "step": "llm", "ok": true, "query": "extraction 0.1s"}
+{"company": "Bapcor", "step": "verify", "ok": false, "error": "signal (anniversary, 1971): over a year old; not used"}
+{"company": "Bapcor", "step": "score", "ok": true, "error": "", "query": "{'timing': 15, 'segment': 8, 'size': 15, 'location': 2, 'buyer': 10, 'red_flag': 0}"}
+{"company": "Bapcor", "step": "draft", "ok": true, "query": "attempts=1", "error": ""}
+{"company": "Bapcor", "step": "done", "ok": true, "query": "12.6s, 4 sources read"}
+{"company": "Symal Group", "step": "fetch", "kind": "site:home", "url": "https://www.symal.com.au", "ok": true, "status": 200, "chars": 1232, "cached": true, "error": ""}
+{"company": "Symal Group", "step": "search", "query": "Symal Group conference summit 2026 2027", "ok": true}
+{"company": "Symal Group", "step": "search", "query": "Symal Group sustainability impact report 2026", "ok": true}
+{"company": "Symal Group", "step": "search", "query": "Symal Group rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Symal Group", "step": "search", "query": "Symal Group Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Symal Group", "step": "search", "query": "news: Symal Group Australia", "ok": true}
+{"company": "Symal Group", "step": "fetch", "kind": "site", "url": "https://symal.com.au/sustainability", "ok": true, "status": 200, "chars": 2814, "cached": true, "error": ""}
+{"company": "Symal Group", "step": "fetch", "kind": "site", "url": "https://symal.com.au/news", "ok": true, "status": 200, "chars": 9927, "cached": true, "error": ""}
+{"company": "Symal Group", "step": "fetch", "kind": "site", "url": "https://symal.com.au/sectors/land-remediation", "ok": true, "status": 200, "chars": 922, "cached": true, "error": ""}
+{"company": "Symal Group", "step": "fetch", "kind": "site", "url": "https://symal.com.au/news/we-pause-we-reflect-we-remember-", "ok": true, "status": 200, "chars": 1753, "cached": true, "error": ""}
+{"company": "Symal Group", "step": "fetch", "kind": "site", "url": "https://symal.com.au/news/fy26-in-review-a-year-of-building-momentum", "ok": true, "status": 200, "chars": 2669, "cached": true, "error": ""}
+{"company": "Symal Group", "step": "fetch", "kind": "search", "url": "https://symal.com.au/", "ok": false, "status": 200, "chars": 1232, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Symal Group", "step": "fetch", "kind": "search", "url": "https://symal.com.au/sustainability/", "ok": false, "status": 200, "chars": 2814, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Symal Group", "step": "fetch", "kind": "search", "url": "https://symal.com.au/sustainability/environment/", "ok": true, "status": 200, "chars": 1287, "cached": true, "error": ""}
+{"company": "Symal Group", "step": "fetch", "kind": "search", "url": "https://symal.com.au/news/fy26-in-review-a-year-of-building-momentum/", "ok": false, "status": 200, "chars": 2669, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Symal Group", "step": "fetch", "kind": "search", "url": "https://symal.com.au/investor/", "ok": true, "status": 200, "chars": 812, "cached": true, "error": ""}
+{"company": "Symal Group", "step": "fetch", "kind": "search", "url": "https://symal.com.au/symal-group/", "ok": true, "status": 200, "chars": 960, "cached": true, "error": ""}
+{"company": "Symal Group", "step": "fetch", "kind": "search", "url": "https://kalkinemedia.com/au/news/announcements/symal-group-md-joe-bartolo-shares-fy26-results-and-fy27-outlook-at-morgans-noosa-conference", "ok": true, "status": 200, "chars": 2677, "cached": true, "error": ""}
+{"company": "Symal Group", "step": "llm", "ok": true, "query": "extraction 0.2s"}
+{"company": "Symal Group", "step": "verify", "ok": false, "error": "signal (anniversary): date 2026-10-14 not stated near the quote; treated as undated"}
+{"company": "Symal Group", "step": "verify", "ok": false, "error": "signal (anniversary, 2026-10-14): undated; not used"}
+{"company": "Symal Group", "step": "score", "ok": true, "error": "", "query": "{'timing': 35, 'segment': 25, 'size': 20, 'location': 9, 'buyer': 10, 'red_flag': 0}"}
+{"company": "Symal Group", "step": "draft", "ok": true, "query": "attempts=1", "error": ""}
+{"company": "Symal Group", "step": "done", "ok": true, "query": "7.5s, 10 sources read"}
+{"company": "Lovisa Holdings", "step": "fetch", "kind": "site:home", "url": "https://www.lovisa.com.au", "ok": true, "status": 200, "chars": 1549, "cached": true, "error": ""}
+{"company": "Lovisa Holdings", "step": "search", "query": "Lovisa Holdings conference summit 2026 2027", "ok": true}
+{"company": "Lovisa Holdings", "step": "search", "query": "Lovisa Holdings sustainability impact report 2026", "ok": true}
+{"company": "Lovisa Holdings", "step": "search", "query": "Lovisa Holdings rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Lovisa Holdings", "step": "search", "query": "Lovisa Holdings Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Lovisa Holdings", "step": "search", "query": "news: Lovisa Holdings Australia", "ok": true}
+{"company": "Lovisa Holdings", "step": "fetch", "kind": "site", "url": "https://www.lovisa.com.au/collections/press-on-nails", "ok": true, "status": 200, "chars": 1429, "cached": true, "error": ""}
+{"company": "Lovisa Holdings", "step": "fetch", "kind": "site", "url": "https://www.lovisa.com.au/pages/about", "ok": true, "status": 200, "chars": 1377, "cached": true, "error": ""}
+{"company": "Lovisa Holdings", "step": "fetch", "kind": "site", "url": "https://www.lovisa.com.au/pages/investor-centre", "ok": true, "status": 200, "chars": 6075, "cached": true, "error": ""}
+{"company": "Lovisa Holdings", "step": "fetch", "kind": "search", "url": "https://www.lovisa.com/pages/investors-reports", "ok": true, "status": 200, "chars": 950, "cached": true, "error": ""}
+{"company": "Lovisa Holdings", "step": "fetch", "kind": "search", "url": "https://www.marketscreener.com/quote/stock/LOVISA-HOLDINGS-LIMITED-19157145/calendar/", "ok": false, "status": 403, "chars": 0, "cached": false, "error": "HTTP 403"}
+{"company": "Lovisa Holdings", "step": "fetch", "kind": "search", "url": "https://www.lovisa.com/pages/investor-centre", "ok": true, "status": 200, "chars": 6333, "cached": true, "error": ""}
+{"company": "Lovisa Holdings", "step": "fetch", "kind": "search", "url": "https://stockanalysis.com/quote/asx/LOV/transcripts/559441-h2-2026/", "ok": true, "status": 200, "chars": 26662, "cached": true, "error": ""}
+{"company": "Lovisa Holdings", "step": "fetch", "kind": "search", "url": "https://www.sustainabilityreports.com/lovisa-holdings", "ok": true, "status": 200, "chars": 443, "cached": true, "error": ""}
+{"company": "Lovisa Holdings", "step": "fetch", "kind": "search", "url": "https://www.sustainabilityreports.com/lovisa-holdings/2026/sustainability-report", "ok": true, "status": 200, "chars": 685, "cached": true, "error": ""}
+{"company": "Lovisa Holdings", "step": "fetch", "kind": "search", "url": "https://www.lovisa.com/pages/2026-asx-announcements", "ok": true, "status": 200, "chars": 1240, "cached": true, "error": ""}
+{"company": "Lovisa Holdings", "step": "llm", "ok": true, "query": "extraction 0.2s"}
+{"company": "Lovisa Holdings", "step": "score", "ok": true, "error": "", "query": "{'timing': 28, 'segment': 25, 'size': 10, 'location': 2, 'buyer': 10, 'red_flag': 0}"}
+{"company": "Lovisa Holdings", "step": "draft", "ok": true, "query": "attempts=1", "error": ""}
+{"company": "Lovisa Holdings", "step": "done", "ok": true, "query": "15.8s, 10 sources read"}
+{"company": "IQPC Australia", "step": "fetch", "kind": "site:home", "url": "https://www.iqpc.com", "ok": true, "status": 200, "chars": 2920, "cached": true, "error": ""}
+{"company": "IQPC Australia", "step": "search", "query": "IQPC Australia conference summit 2026 2027", "ok": true}
+{"company": "IQPC Australia", "step": "search", "query": "IQPC Australia sustainability impact report 2026", "ok": true}
+{"company": "IQPC Australia", "step": "search", "query": "IQPC Australia rebrand launch anniversary funding 2026", "ok": true}
+{"company": "IQPC Australia", "step": "search", "query": "IQPC Australia Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "IQPC Australia", "step": "search", "query": "news: IQPC Australia Australia", "ok": true}
+{"company": "IQPC Australia", "step": "fetch", "kind": "site", "url": "https://www.iqpc.com/events", "ok": true, "status": 200, "chars": 388, "cached": true, "error": ""}
+{"company": "IQPC Australia", "step": "fetch", "kind": "site", "url": "https://www.iqpc.com/event-format", "ok": true, "status": 200, "chars": 2267, "cached": true, "error": ""}
+{"company": "IQPC Australia", "step": "fetch", "kind": "site", "url": "https://www.iqpc.com/online-events", "ok": false, "status": 200, "chars": 388, "cached": true, "error": "duplicate of a page already read"}
+{"company": "IQPC Australia", "step": "fetch", "kind": "site", "url": "https://www.iqpc.com/event-sponsorship", "ok": true, "status": 200, "chars": 3808, "cached": true, "error": ""}
+{"company": "IQPC Australia", "step": "fetch", "kind": "site", "url": "https://www.iqpc.com/events?field_event_type=ONLINE", "ok": true, "status": 200, "chars": 406, "cached": true, "error": ""}
+{"company": "IQPC Australia", "step": "fetch", "kind": "search", "url": "https://www.iqpc.com/events-aus-financial-crime", "ok": true, "status": 200, "chars": 2770, "cached": true, "error": ""}
+{"company": "IQPC Australia", "step": "fetch", "kind": "search", "url": "https://www.iqpc.com/events-asset-management-performance-summit", "ok": true, "status": 200, "chars": 3502, "cached": true, "error": ""}
+{"company": "IQPC Australia", "step": "fetch", "kind": "search", "url": "https://www.iqpc.com/events-customershow", "ok": true, "status": 200, "chars": 3296, "cached": true, "error": ""}
+{"company": "IQPC Australia", "step": "fetch", "kind": "search", "url": "https://www.clocate.com/conferences-by+iqpc+in+australia/b3ItMytjby1hdQ==/", "ok": true, "status": 200, "chars": 907, "cached": true, "error": ""}
+{"company": "IQPC Australia", "step": "fetch", "kind": "search", "url": "https://hr-world.tradepub.com/?pt=adv&page=IQPC+Australia", "ok": true, "status": 200, "chars": 9633, "cached": true, "error": ""}
+{"company": "IQPC Australia", "step": "fetch", "kind": "search", "url": "https://compworth.com/company/iqpc-australia", "ok": false, "status": 403, "chars": 0, "cached": false, "error": "HTTP 403"}
+{"company": "IQPC Australia", "step": "fetch", "kind": "search", "url": "https://www.clocate.com/conferences-by+iqpc+in+sydney/b3ItMytjaS0yNjQ=/", "ok": true, "status": 200, "chars": 870, "cached": true, "error": ""}
+{"company": "IQPC Australia", "step": "llm", "ok": true, "query": "extraction 0.0s"}
+{"company": "IQPC Australia", "step": "verify", "ok": false, "error": "signal (conference_or_summit, 2026-08-26): already happened; not used"}
+{"company": "IQPC Australia", "step": "score", "ok": true, "error": "", "query": "{'timing': 0, 'segment': 25, 'size': 5, 'location': 2, 'buyer': 5, 'red_flag': 0}"}
+{"company": "IQPC Australia", "step": "done", "ok": true, "query": "4.6s, 11 sources read"}
+{"company": "Mumbrella Media", "step": "fetch", "kind": "site:home", "url": "https://mumbrella.com.au", "ok": true, "status": 200, "chars": 9372, "cached": true, "error": ""}
+{"company": "Mumbrella Media", "step": "search", "query": "Mumbrella Media conference summit 2026 2027", "ok": true}
+{"company": "Mumbrella Media", "step": "search", "query": "Mumbrella Media sustainability impact report 2026", "ok": true}
+{"company": "Mumbrella Media", "step": "search", "query": "Mumbrella Media rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Mumbrella Media", "step": "search", "query": "Mumbrella Media Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Mumbrella Media", "step": "search", "query": "news: Mumbrella Media Australia", "ok": true}
+{"company": "Mumbrella Media", "step": "fetch", "kind": "site", "url": "https://mumbrella.com.au/subscribe", "ok": true, "status": 200, "chars": 4142, "cached": true, "error": ""}
+{"company": "Mumbrella Media", "step": "fetch", "kind": "site", "url": "https://mumbrella.com.au/category/fyi", "ok": true, "status": 200, "chars": 347, "cached": true, "error": ""}
+{"company": "Mumbrella Media", "step": "fetch", "kind": "site", "url": "https://mumbrella.com.au/category/news", "ok": true, "status": 200, "chars": 336, "cached": true, "error": ""}
+{"company": "Mumbrella Media", "step": "fetch", "kind": "site", "url": "https://mumbrella.com.au/mumbrella-events", "ok": true, "status": 200, "chars": 669, "cached": true, "error": ""}
+{"company": "Mumbrella Media", "step": "fetch", "kind": "site", "url": "https://mumbrella.com.au/category/mumbrella-sessions", "ok": true, "status": 200, "chars": 344, "cached": true, "error": ""}
+{"company": "Mumbrella Media", "step": "fetch", "kind": "search", "url": "https://mumbrella.com.au/mumbrella360", "ok": true, "status": 200, "chars": 3422, "cached": true, "error": ""}
+{"company": "Mumbrella Media", "step": "fetch", "kind": "search", "url": "https://mumbrella.com.au/", "ok": false, "status": 200, "chars": 9372, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Mumbrella Media", "step": "fetch", "kind": "search", "url": "https://mumbrella.com.au/mumbrellaawards", "ok": true, "status": 200, "chars": 5884, "cached": true, "error": ""}
+{"company": "Mumbrella Media", "step": "fetch", "kind": "search", "url": "https://mumbrella.com.au/seven-media-group-appoints-holly-fallon-as-head-of-news-and-factual-for-listenr-944020", "ok": true, "status": 200, "chars": 3865, "cached": true, "error": ""}
+{"company": "Mumbrella Media", "step": "fetch", "kind": "search", "url": "https://mumbrella.com.au/nova-entertainment-partners-with-byd-and-wpp-media-for-christmas-campaign-944033", "ok": true, "status": 200, "chars": 5265, "cached": true, "error": ""}
+{"company": "Mumbrella Media", "step": "fetch", "kind": "search", "url": "https://mumbrella.com.au/seven-media-group-appoints-natasha-coxhead-as-director-of-finance-for-tv-and-streaming-944079", "ok": true, "status": 200, "chars": 2832, "cached": true, "error": ""}
+{"company": "Mumbrella Media", "step": "fetch", "kind": "search", "url": "https://mumbrella.com.au/media-agency-atomic-212-expands-leadership-team-across-australia-943536", "ok": true, "status": 200, "chars": 1964, "cached": true, "error": ""}
+{"company": "Mumbrella Media", "step": "llm", "ok": true, "query": "extraction 0.0s"}
+{"company": "Mumbrella Media", "step": "score", "ok": true, "error": "", "query": "{'timing': 35, 'segment': 25, 'size': 5, 'location': 2, 'buyer': 10, 'red_flag': 0}"}
+{"company": "Mumbrella Media", "step": "draft", "ok": true, "query": "attempts=1", "error": ""}
+{"company": "Mumbrella Media", "step": "done", "ok": true, "query": "10.1s, 12 sources read"}
+{"company": "Terrapinn Australia", "step": "fetch", "kind": "site:home", "url": "https://www.terrapinn.com", "ok": true, "status": 200, "chars": 1018, "cached": true, "error": ""}
+{"company": "Terrapinn Australia", "step": "search", "query": "Terrapinn Australia conference summit 2026 2027", "ok": true}
+{"company": "Terrapinn Australia", "step": "search", "query": "Terrapinn Australia sustainability impact report 2026", "ok": true}
+{"company": "Terrapinn Australia", "step": "search", "query": "Terrapinn Australia rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Terrapinn Australia", "step": "search", "query": "Terrapinn Australia Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Terrapinn Australia", "step": "search", "query": "news: Terrapinn Australia Australia", "ok": true}
+{"company": "Terrapinn Australia", "step": "fetch", "kind": "site", "url": "https://www.terrapinn.com/conference/connected-britain?trc=trpn-ft1", "ok": true, "status": 200, "chars": 947, "cached": true, "error": ""}
+{"company": "Terrapinn Australia", "step": "fetch", "kind": "site", "url": "https://www.terrapinn.com/conference/aviation-festival?trc=trpn-ft1", "ok": true, "status": 200, "chars": 2129, "cached": true, "error": ""}
+{"company": "Terrapinn Australia", "step": "fetch", "kind": "site", "url": "https://www.terrapinn.com/conference/broadband-communities?trc=trpn-ft1", "ok": true, "status": 200, "chars": 4702, "cached": true, "error": ""}
+{"company": "Terrapinn Australia", "step": "fetch", "kind": "site", "url": "https://www.terrapinn.com/conference/aviation-festival-americas?trc=trpn-ft1", "ok": true, "status": 200, "chars": 2638, "cached": true, "error": ""}
+{"company": "Terrapinn Australia", "step": "fetch", "kind": "site", "url": "https://www.terrapinn.com/events/asia", "ok": true, "status": 200, "chars": 742, "cached": true, "error": ""}
+{"company": "Terrapinn Australia", "step": "fetch", "kind": "search", "url": "https://www.terrapinn.com/conference/technology-in-government/index.stm", "ok": true, "status": 200, "chars": 2993, "cached": true, "error": ""}
+{"company": "Terrapinn Australia", "step": "fetch", "kind": "search", "url": "https://www.terrapinn.com/", "ok": false, "status": 200, "chars": 1018, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Terrapinn Australia", "step": "fetch", "kind": "search", "url": "https://email.terrapinn.com/about-us", "ok": false, "status": null, "chars": 0, "cached": false, "error": "SSLError: HTTPSConnectionPool(host='email.terrapinn.com', port=443): Max retries exceeded with url: /about-us (Caused by SSLError(SSLCertVerificationError(1, \"["}
+{"company": "Terrapinn Australia", "step": "fetch", "kind": "search", "url": "https://www.clocate.com/conferences-by+terrapinn+in+australia/b3ItMzArY28tYXU=/", "ok": true, "status": 200, "chars": 782, "cached": true, "error": ""}
+{"company": "Terrapinn Australia", "step": "fetch", "kind": "search", "url": "https://www.terrapinnlimited.com/", "ok": false, "status": null, "chars": 0, "cached": false, "error": "SSLError: HTTPSConnectionPool(host='www.terrapinnlimited.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL"}
+{"company": "Terrapinn Australia", "step": "fetch", "kind": "search", "url": "https://flashesandflames.com/2026/02/27/terrapinn-soars-with-solar/", "ok": true, "status": 200, "chars": 1189, "cached": true, "error": ""}
+{"company": "Terrapinn Australia", "step": "fetch", "kind": "search", "url": "https://roadsonline.com.au/australias-landmark-transport-infrastructure-event-roads-traffic-au-2026-returns-to-sydney-to-address-nations-multi-billion-dollar-modernisation-pipeline/", "ok": true, "status": 200, "chars": 5356, "cached": true, "error": ""}
+{"company": "Terrapinn Australia", "step": "llm", "ok": true, "query": "extraction 0.0s"}
+{"company": "Terrapinn Australia", "step": "score", "ok": true, "error": "", "query": "{'timing': 0, 'segment': 25, 'size': 5, 'location': 10, 'buyer': 5, 'red_flag': 0}"}
+{"company": "Terrapinn Australia", "step": "done", "ok": true, "query": "6.7s, 10 sources read"}
+{"company": "Sydney Festival", "step": "fetch", "kind": "site:home", "url": "https://www.sydneyfestival.org.au", "ok": true, "status": 200, "chars": 1209, "cached": true, "error": ""}
+{"company": "Sydney Festival", "step": "search", "query": "Sydney Festival conference summit 2026 2027", "ok": true}
+{"company": "Sydney Festival", "step": "search", "query": "Sydney Festival sustainability impact report 2026", "ok": true}
+{"company": "Sydney Festival", "step": "search", "query": "Sydney Festival rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Sydney Festival", "step": "search", "query": "Sydney Festival Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Sydney Festival", "step": "search", "query": "news: Sydney Festival Australia", "ok": true}
+{"company": "Sydney Festival", "step": "fetch", "kind": "site", "url": "https://www.sydneyfestival.org.au/stories/49-ticket-offer", "ok": true, "status": 200, "chars": 1164, "cached": true, "error": ""}
+{"company": "Sydney Festival", "step": "fetch", "kind": "site", "url": "https://www.sydneyfestival.org.au/explore", "ok": true, "status": 200, "chars": 475, "cached": true, "error": ""}
+{"company": "Sydney Festival", "step": "fetch", "kind": "site", "url": "https://www.sydneyfestival.org.au/events/15-18", "ok": true, "status": 200, "chars": 2893, "cached": true, "error": ""}
+{"company": "Sydney Festival", "step": "fetch", "kind": "site", "url": "https://www.sydneyfestival.org.au/media-releases", "ok": true, "status": 200, "chars": 39653, "cached": true, "error": ""}
+{"company": "Sydney Festival", "step": "fetch", "kind": "site", "url": "https://www.sydneyfestival.org.au/events/the-party", "ok": true, "status": 200, "chars": 1666, "cached": true, "error": ""}
+{"company": "Sydney Festival", "step": "fetch", "kind": "search", "url": "https://www.sydneyfestival.org.au/stories/welcome-to-2027-program", "ok": true, "status": 200, "chars": 1260, "cached": true, "error": ""}
+{"company": "Sydney Festival", "step": "fetch", "kind": "search", "url": "https://www.sydneyfestival.org.au/pages/annual-review", "ok": false, "status": 200, "chars": 39653, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Sydney Festival", "step": "fetch", "kind": "search", "url": "https://www.sydneyfestival.org.au/annual-review", "ok": false, "status": 200, "chars": 39653, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Sydney Festival", "step": "fetch", "kind": "search", "url": "https://www.sydneyfestival.org.au/pages/media-releases", "ok": false, "status": 200, "chars": 39653, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Sydney Festival", "step": "fetch", "kind": "search", "url": "https://www.sydneyfestival.org.au/sponsor/create-nsw", "ok": true, "status": 200, "chars": 2248, "cached": true, "error": ""}
+{"company": "Sydney Festival", "step": "fetch", "kind": "search", "url": "https://www.sydneyfestival.org.au/", "ok": false, "status": 200, "chars": 1209, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Sydney Festival", "step": "fetch", "kind": "search", "url": "https://www.msn.com/en-au/news/other/fatboy-slim-pnau-to-headline-mardi-gras-party-in-the-tunnels-of-sydney-stadium/ar-AA2gMNK5?ocid=BingNewsVerp", "ok": true, "status": 200, "chars": 3, "cached": true, "error": ""}
+{"company": "Sydney Festival", "step": "llm", "ok": true, "query": "extraction 0.1s"}
+{"company": "Sydney Festival", "step": "score", "ok": true, "error": "", "query": "{'timing': 35, 'segment': 25, 'size': 10, 'location': 10, 'buyer': 10, 'red_flag': 0}"}
+{"company": "Sydney Festival", "step": "draft", "ok": true, "query": "attempts=1", "error": ""}
+{"company": "Sydney Festival", "step": "done", "ok": true, "query": "7.1s, 9 sources read"}
+{"company": "Destination NSW", "step": "fetch", "kind": "site:home", "url": "https://www.destinationnsw.com.au", "ok": true, "status": 200, "chars": 5704, "cached": true, "error": ""}
+{"company": "Destination NSW", "step": "search", "query": "Destination NSW conference summit 2026 2027", "ok": true}
+{"company": "Destination NSW", "step": "search", "query": "Destination NSW sustainability impact report 2026", "ok": true}
+{"company": "Destination NSW", "step": "search", "query": "Destination NSW rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Destination NSW", "step": "search", "query": "Destination NSW Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Destination NSW", "step": "search", "query": "news: Destination NSW Australia", "ok": true}
+{"company": "Destination NSW", "step": "fetch", "kind": "site", "url": "https://www.destinationnsw.com.au/about-us/annual-reports", "ok": true, "status": 200, "chars": 463, "cached": true, "error": ""}
+{"company": "Destination NSW", "step": "fetch", "kind": "site", "url": "https://media.destinationnsw.com.au", "ok": true, "status": 200, "chars": 1169, "cached": true, "error": ""}
+{"company": "Destination NSW", "step": "fetch", "kind": "site", "url": "https://www.destinationnsw.com.au/events", "ok": true, "status": 200, "chars": 687, "cached": true, "error": ""}
+{"company": "Destination NSW", "step": "fetch", "kind": "site", "url": "https://www.destinationnsw.com.au/newsroom", "ok": true, "status": 200, "chars": 314, "cached": true, "error": ""}
+{"company": "Destination NSW", "step": "fetch", "kind": "site", "url": "https://www.destinationnsw.com.au/newsletters", "ok": true, "status": 200, "chars": 1711, "cached": true, "error": ""}
+{"company": "Destination NSW", "step": "fetch", "kind": "search", "url": "https://www.destinationnsw.com.au/newsroom/registrations-open-for-nsw-visitor-economy-forum-2026", "ok": true, "status": 200, "chars": 3095, "cached": true, "error": ""}
+{"company": "Destination NSW", "step": "fetch", "kind": "search", "url": "https://www.destinationnsw.com.au/newsroom/nsw-visitor-economy-forum-and-nsw-tourism-awards-to-unite-at-icc-sydney", "ok": true, "status": 200, "chars": 3284, "cached": true, "error": ""}
+{"company": "Destination NSW", "step": "fetch", "kind": "search", "url": "https://www.destinationnsw.com.au/sustainability", "ok": true, "status": 200, "chars": 1028, "cached": true, "error": ""}
+{"company": "Destination NSW", "step": "fetch", "kind": "search", "url": "https://www.destinationnsw.com.au/destination-nsw-business-support/grants-and-funding", "ok": true, "status": 200, "chars": 1354, "cached": true, "error": ""}
+{"company": "Destination NSW", "step": "fetch", "kind": "search", "url": "https://www.destinationnsw.com.au/newsroom/new-funding-to-power-up-regional-nsw-events", "ok": true, "status": 200, "chars": 2550, "cached": true, "error": ""}
+{"company": "Destination NSW", "step": "fetch", "kind": "search", "url": "https://media.destinationnsw.com.au/media-releases", "ok": true, "status": 200, "chars": 49479, "cached": true, "error": ""}
+{"company": "Destination NSW", "step": "fetch", "kind": "search", "url": "https://www.destinationnsw.com.au/newsroom/seller-applications-open-for-australian-tourism-exchange-2027", "ok": true, "status": 200, "chars": 1605, "cached": true, "error": ""}
+{"company": "Destination NSW", "step": "llm", "ok": true, "query": "extraction 0.1s"}
+{"company": "Destination NSW", "step": "verify", "ok": false, "error": "signal (conference_or_summit, 2026-11-09): already happened; not used"}
+{"company": "Destination NSW", "step": "score", "ok": true, "error": "", "query": "{'timing': 0, 'segment': 25, 'size': 5, 'location': 10, 'buyer': 5, 'red_flag': 0}"}
+{"company": "Destination NSW", "step": "done", "ok": true, "query": "4.1s, 13 sources read"}
+{"company": "Diversified Communications Australia", "step": "fetch", "kind": "site:home", "url": "https://divcom.net.au", "ok": true, "status": 200, "chars": 584, "cached": true, "error": ""}
+{"company": "Diversified Communications Australia", "step": "search", "query": "Diversified Communications Australia conference summit 2026 2027", "ok": true}
+{"company": "Diversified Communications Australia", "step": "search", "query": "Diversified Communications Australia sustainability impact report 2026", "ok": true}
+{"company": "Diversified Communications Australia", "step": "search", "query": "Diversified Communications Australia rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Diversified Communications Australia", "step": "search", "query": "Diversified Communications Australia Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Diversified Communications Australia", "step": "search", "query": "news: Diversified Communications Australia Australia", "ok": true}
+{"company": "Diversified Communications Australia", "step": "fetch", "kind": "site", "url": "https://divcom.net.au/about/sustainability", "ok": true, "status": 200, "chars": 2756, "cached": true, "error": ""}
+{"company": "Diversified Communications Australia", "step": "fetch", "kind": "site", "url": "https://divcom.net.au/about/our-story", "ok": true, "status": 200, "chars": 1054, "cached": true, "error": ""}
+{"company": "Diversified Communications Australia", "step": "fetch", "kind": "site", "url": "https://divcom.net.au/news", "ok": true, "status": 200, "chars": 539, "cached": true, "error": ""}
+{"company": "Diversified Communications Australia", "step": "fetch", "kind": "site", "url": "https://divcom.net.au/portfolio/products/events", "ok": true, "status": 200, "chars": 1256, "cached": true, "error": ""}
+{"company": "Diversified Communications Australia", "step": "fetch", "kind": "site", "url": "https://divcom.net.au//portfolio/products/events", "ok": false, "status": 200, "chars": 1256, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Diversified Communications Australia", "step": "fetch", "kind": "search", "url": "https://divcom.net.au/about/", "ok": true, "status": 200, "chars": 1268, "cached": true, "error": ""}
+{"company": "Diversified Communications Australia", "step": "fetch", "kind": "search", "url": "https://www.divcom.com/portfolio/products/events/", "ok": true, "status": 200, "chars": 2568, "cached": true, "error": ""}
+{"company": "Diversified Communications Australia", "step": "fetch", "kind": "search", "url": "https://www.clocate.com/conferences-by+diversified-communications-australia+2026/b3ItNTIyNCt5cg==/", "ok": true, "status": 200, "chars": 518, "cached": true, "error": ""}
+{"company": "Diversified Communications Australia", "step": "fetch", "kind": "search", "url": "https://www.clocate.com/conferences-by+diversified-communications-australia+in+sydney/b3ItNTIyNCtjaS0yNjQ=/", "ok": true, "status": 200, "chars": 551, "cached": true, "error": ""}
+{"company": "Diversified Communications Australia", "step": "fetch", "kind": "search", "url": "https://www.divcom.com/", "ok": true, "status": 200, "chars": 887, "cached": true, "error": ""}
+{"company": "Diversified Communications Australia", "step": "fetch", "kind": "search", "url": "https://www.divcom.com/about/sustainability/", "ok": true, "status": 200, "chars": 1735, "cached": true, "error": ""}
+{"company": "Diversified Communications Australia", "step": "fetch", "kind": "search", "url": "https://ditchcarbon.com/organizations/diversified-communications-inc", "ok": true, "status": 200, "chars": 2085, "cached": true, "error": ""}
+{"company": "Diversified Communications Australia", "step": "llm", "ok": true, "query": "extraction 0.0s"}
+{"company": "Diversified Communications Australia", "step": "verify", "ok": false, "error": "signal (conference_or_summit, 2028): stale; not used"}
+{"company": "Diversified Communications Australia", "step": "score", "ok": true, "error": "", "query": "{'timing': 35, 'segment': 25, 'size': 5, 'location': 9, 'buyer': 10, 'red_flag': 0}"}
+{"company": "Diversified Communications Australia", "step": "draft", "ok": true, "query": "attempts=1", "error": ""}
+{"company": "Diversified Communications Australia", "step": "done", "ok": true, "query": "7.9s, 12 sources read"}
+{"company": "Australasian Exhibitions & Events", "step": "fetch", "kind": "site:home", "url": "https://www.auexhibitions.com.au", "ok": true, "status": 200, "chars": 943, "cached": true, "error": ""}
+{"company": "Australasian Exhibitions & Events", "step": "search", "query": "Australasian Exhibitions & Events conference summit 2026 2027", "ok": true}
+{"company": "Australasian Exhibitions & Events", "step": "search", "query": "Australasian Exhibitions & Events sustainability impact report 2026", "ok": true}
+{"company": "Australasian Exhibitions & Events", "step": "search", "query": "Australasian Exhibitions & Events rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Australasian Exhibitions & Events", "step": "search", "query": "Australasian Exhibitions & Events Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Australasian Exhibitions & Events", "step": "search", "query": "news: Australasian Exhibitions & Events Australia", "ok": true}
+{"company": "Australasian Exhibitions & Events", "step": "fetch", "kind": "search", "url": "https://www.auexhibitions.com.au/", "ok": false, "status": 200, "chars": 943, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Australasian Exhibitions & Events", "step": "llm", "ok": true, "query": "extraction 0.0s"}
+{"company": "Australasian Exhibitions & Events", "step": "score", "ok": true, "error": "", "query": "{'timing': 0, 'segment': 25, 'size': 5, 'location': 2, 'buyer': 5, 'red_flag': 0}"}
+{"company": "Australasian Exhibitions & Events", "step": "done", "ok": true, "query": "4.0s, 1 sources read"}
+{"company": "Melbourne International Comedy Festival", "step": "fetch", "kind": "site:home", "url": "https://www.comedyfestival.com.au", "ok": true, "status": 200, "chars": 465, "cached": true, "error": ""}
+{"company": "Melbourne International Comedy Festival", "step": "search", "query": "Melbourne International Comedy Festival conference summit 2026 2027", "ok": true}
+{"company": "Melbourne International Comedy Festival", "step": "search", "query": "Melbourne International Comedy Festival sustainability impact report 2026", "ok": true}
+{"company": "Melbourne International Comedy Festival", "step": "search", "query": "Melbourne International Comedy Festival rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Melbourne International Comedy Festival", "step": "search", "query": "Melbourne International Comedy Festival Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Melbourne International Comedy Festival", "step": "search", "query": "news: Melbourne International Comedy Festival Australia", "ok": true}
+{"company": "Melbourne International Comedy Festival", "step": "fetch", "kind": "site", "url": "https://www.comedyfestival.com.au/news", "ok": false, "status": 200, "chars": 465, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Melbourne International Comedy Festival", "step": "fetch", "kind": "site", "url": "https://www.comedyfestival.com.au/news/2026-award-winners", "ok": true, "status": 200, "chars": 4031, "cached": true, "error": ""}
+{"company": "Melbourne International Comedy Festival", "step": "fetch", "kind": "site", "url": "https://www.comedyfestival.com.au/news/celebrating-a-record-40th-year", "ok": true, "status": 200, "chars": 5701, "cached": true, "error": ""}
+{"company": "Melbourne International Comedy Festival", "step": "fetch", "kind": "site", "url": "https://www.comedyfestival.com.au/news/stream-raw-comedy-2026-on-sbs-this-august", "ok": true, "status": 200, "chars": 1300, "cached": true, "error": ""}
+{"company": "Melbourne International Comedy Festival", "step": "fetch", "kind": "site", "url": "https://www.comedyfestival.com.au/news/asian-allstars-gala-available-to-stream-for-the-first-time", "ok": true, "status": 200, "chars": 1270, "cached": true, "error": ""}
+{"company": "Melbourne International Comedy Festival", "step": "fetch", "kind": "search", "url": "https://www.comedyfestival.com.au/", "ok": false, "status": 200, "chars": 465, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Melbourne International Comedy Festival", "step": "fetch", "kind": "search", "url": "https://www.comedyfestival.com.au/participate/", "ok": true, "status": 200, "chars": 2281, "cached": true, "error": ""}
+{"company": "Melbourne International Comedy Festival", "step": "fetch", "kind": "search", "url": "https://www.comedyfestival.com.au/news/celebrating-a-record-40th-year/", "ok": false, "status": 200, "chars": 5701, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Melbourne International Comedy Festival", "step": "fetch", "kind": "search", "url": "https://www.comedyfestival.com.au/support-us/2026-festival-partners/", "ok": true, "status": 200, "chars": 696, "cached": true, "error": ""}
+{"company": "Melbourne International Comedy Festival", "step": "fetch", "kind": "search", "url": "https://www.comedyfestival.com.au/news/melbourne-international-comedy-festival-unveils-huge-40th-anniversary-program/", "ok": true, "status": 200, "chars": 4339, "cached": true, "error": ""}
+{"company": "Melbourne International Comedy Festival", "step": "fetch", "kind": "search", "url": "https://cms.comedyfestival.com.au/news/first-highlights-announced-for-the-2026-festival/", "ok": true, "status": 200, "chars": 6089, "cached": true, "error": ""}
+{"company": "Melbourne International Comedy Festival", "step": "fetch", "kind": "search", "url": "https://cms.comedyfestival.com.au/news/", "ok": false, "status": 200, "chars": 465, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Melbourne International Comedy Festival", "step": "llm", "ok": true, "query": "extraction 0.0s"}
+{"company": "Melbourne International Comedy Festival", "step": "score", "ok": true, "error": "", "query": "{'timing': 35, 'segment': 25, 'size': 5, 'location': 9, 'buyer': 10, 'red_flag': 0}"}
+{"company": "Melbourne International Comedy Festival", "step": "draft", "ok": true, "query": "attempts=1", "error": ""}
+{"company": "Melbourne International Comedy Festival", "step": "done", "ok": true, "query": "8.7s, 9 sources read"}
+{"company": "Australian Grand Prix Corporation", "step": "fetch", "kind": "site:home", "url": "https://www.grandprix.com.au", "ok": false, "status": null, "chars": 0, "cached": false, "error": "blocked source (not a permitted public page)"}
+{"company": "Australian Grand Prix Corporation", "step": "search", "query": "Australian Grand Prix Corporation conference summit 2026 2027", "ok": true}
+{"company": "Australian Grand Prix Corporation", "step": "search", "query": "Australian Grand Prix Corporation sustainability impact report 2026", "ok": true}
+{"company": "Australian Grand Prix Corporation", "step": "search", "query": "Australian Grand Prix Corporation rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Australian Grand Prix Corporation", "step": "search", "query": "Australian Grand Prix Corporation Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Australian Grand Prix Corporation", "step": "search", "query": "news: Australian Grand Prix Corporation Australia", "ok": true}
+{"company": "Australian Grand Prix Corporation", "step": "fetch", "kind": "search", "url": "https://www.cricketnmore.com/sports-news/alan-jones-australias-1980-f1-world-champion-dies-aged-80-42923", "ok": true, "status": 200, "chars": 3337, "cached": true, "error": ""}
+{"company": "Australian Grand Prix Corporation", "step": "fetch", "kind": "search", "url": "https://www.msn.com/en-gb/news/other/motor-racing-australian-f1-world-champion-alan-jones-dies-aged-80/ar-AA2gMP0C?ocid=BingNewsVerp", "ok": true, "status": 200, "chars": 3, "cached": true, "error": ""}
+{"company": "Australian Grand Prix Corporation", "step": "fetch", "kind": "search", "url": "https://www.freepressjournal.in/sports/australias-1980-formula-1-world-champion-alan-jones-dies-at-80-3-days-after-birthday-with-12-grand-prix-victories-to-his-name", "ok": true, "status": 200, "chars": 2883, "cached": true, "error": ""}
+{"company": "Australian Grand Prix Corporation", "step": "fetch", "kind": "search", "url": "https://www.gazette.vic.gov.au/gazette/Gazettes2026/GG2026S614.pdf", "ok": true, "status": 200, "chars": 2090, "cached": true, "error": ""}
+{"company": "Australian Grand Prix Corporation", "step": "fetch", "kind": "search", "url": "https://news.ssbcrack.com/australian-grand-prix-ticket-prices-increase-ahead-of-2027-event/", "ok": true, "status": 200, "chars": 2575, "cached": true, "error": ""}
+{"company": "Australian Grand Prix Corporation", "step": "fetch", "kind": "search", "url": "https://www.motogp.com.au/uploads/images/AGPC-Annual-Report-2026.pdf", "ok": true, "status": 200, "chars": 21995, "cached": true, "error": ""}
+{"company": "Australian Grand Prix Corporation", "step": "fetch", "kind": "search", "url": "https://www.sportsenvironmentalliance.org/news/sustainability-in-the-fast-lane-the-2026-australian-grand-prix-in-melbourne", "ok": true, "status": 200, "chars": 4279, "cached": true, "error": ""}
+{"company": "Australian Grand Prix Corporation", "step": "llm", "ok": true, "query": "extraction 0.0s"}
+{"company": "Australian Grand Prix Corporation", "step": "score", "ok": true, "error": "", "query": "{'timing': 35, 'segment': 25, 'size': 5, 'location': 9, 'buyer': 10, 'red_flag': 0}"}
+{"company": "Australian Grand Prix Corporation", "step": "draft", "ok": true, "query": "attempts=1", "error": ""}
+{"company": "Australian Grand Prix Corporation", "step": "done", "ok": true, "query": "12.1s, 7 sources read"}
+{"company": "Australian Fashion Festival", "step": "fetch", "kind": "site:home", "url": "https://www.australianfashionfestival.com.au", "ok": true, "status": 200, "chars": 1069, "cached": true, "error": ""}
+{"company": "Australian Fashion Festival", "step": "search", "query": "Australian Fashion Festival conference summit 2026 2027", "ok": true}
+{"company": "Australian Fashion Festival", "step": "search", "query": "Australian Fashion Festival sustainability impact report 2026", "ok": true}
+{"company": "Australian Fashion Festival", "step": "search", "query": "Australian Fashion Festival rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Australian Fashion Festival", "step": "search", "query": "Australian Fashion Festival Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Australian Fashion Festival", "step": "search", "query": "news: Australian Fashion Festival Australia", "ok": true}
+{"company": "Australian Fashion Festival", "step": "fetch", "kind": "site", "url": "https://www.australianfashionfestival.com.au/festival-news", "ok": true, "status": 200, "chars": 3209, "cached": true, "error": ""}
+{"company": "Australian Fashion Festival", "step": "fetch", "kind": "search", "url": "https://www.australianfashionfestival.com.au/", "ok": false, "status": 200, "chars": 1069, "cached": true, "error": "duplicate of a page already read"}
+{"company": "Australian Fashion Festival", "step": "fetch", "kind": "search", "url": "https://www.australianfashionfestival.com.au/independentprogram2027", "ok": true, "status": 200, "chars": 6483, "cached": true, "error": ""}
+{"company": "Australian Fashion Festival", "step": "fetch", "kind": "search", "url": "https://www.melbournepoint.com.au/events/melbourne-fashion-festival/", "ok": true, "status": 200, "chars": 7853, "cached": true, "error": ""}
+{"company": "Australian Fashion Festival", "step": "fetch", "kind": "search", "url": "https://www.clocate.com/conferences-by+australian-fashion-council-afc/b3ItODgxNg==/", "ok": true, "status": 200, "chars": 466, "cached": true, "error": ""}
+{"company": "Australian Fashion Festival", "step": "fetch", "kind": "search", "url": "https://www.sourceready.com/report/detail/australia-sustainable-fashion-market-report-2026", "ok": true, "status": 200, "chars": 12520, "cached": true, "error": ""}
+{"company": "Australian Fashion Festival", "step": "fetch", "kind": "search", "url": "https://wifitalents.com/australian-fashion-industry-statistics/", "ok": true, "status": 200, "chars": 11806, "cached": true, "error": ""}
+{"company": "Australian Fashion Festival", "step": "fetch", "kind": "search", "url": "https://ausfashioncouncil.com/", "ok": true, "status": 200, "chars": 1008, "cached": true, "error": ""}
+{"company": "Australian Fashion Festival", "step": "llm", "ok": true, "query": "extraction 0.1s"}
+{"company": "Australian Fashion Festival", "step": "score", "ok": true, "error": "", "query": "{'timing': 35, 'segment': 25, 'size': 5, 'location': 9, 'buyer': 10, 'red_flag': 0}"}
+{"company": "Australian Fashion Festival", "step": "draft", "ok": true, "query": "attempts=1", "error": ""}
+{"company": "Australian Fashion Festival", "step": "done", "ok": true, "query": "13.8s, 8 sources read"}
+{"company": "Broken Site Test Pty Ltd", "step": "fetch", "kind": "site:home", "url": "https://broken-site-test-wilmarcs.com.au", "ok": false, "status": null, "chars": 0, "cached": false, "error": "ConnectionError: HTTPSConnectionPool(host='broken-site-test-wilmarcs.com.au', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnecti"}
+{"company": "Broken Site Test Pty Ltd", "step": "search", "query": "Broken Site Test Pty Ltd conference summit 2026 2027", "ok": true}
+{"company": "Broken Site Test Pty Ltd", "step": "search", "query": "Broken Site Test Pty Ltd sustainability impact report 2026", "ok": true}
+{"company": "Broken Site Test Pty Ltd", "step": "search", "query": "Broken Site Test Pty Ltd rebrand launch anniversary funding 2026", "ok": true}
+{"company": "Broken Site Test Pty Ltd", "step": "search", "query": "Broken Site Test Pty Ltd Australia 2027 event dates Sydney Melbourne", "ok": true}
+{"company": "Broken Site Test Pty Ltd", "step": "search", "query": "news: Broken Site Test Pty Ltd Australia", "ok": true}
+{"company": "Pinnacle Investment Management Group Limited", "step": "skip", "ok": false, "error": "duplicate of 'Pinnacle Investment Management Group'"}

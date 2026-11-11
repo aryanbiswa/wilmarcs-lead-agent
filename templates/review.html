@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% set step = 3 %}
+{% block content %}
+<div class="row">
+  <div><h1>Edit the best drafts (Task 3)</h1>
+  <p class="sub">The tool's draft stays on the left as <b>before</b>. Write your <b>after</b> on the right and note what you changed and why.
+  Tick your <b>5 best</b>, and pick <b>2</b> to show as before/after in the pilot plan. Changes save automatically.</p></div>
+  <span class="spacer"></span>
+  <a class="btn" href="{{ url_for('download', run_id=m.id, kind='edited_drafts.xlsx') }}">Download edited drafts (.xlsx)</a>
+  <a class="btn primary" href="{{ url_for('plan_page', run_id=m.id) }}">Pilot plan →</a>
+</div>
+
+<div class="panel row small" style="margin-bottom:14px">
+  <span>Top 5 picked: <b id="n-top">0</b>/5</span> · <span>Before/after picked: <b id="n-show">0</b>/2</span> ·
+  <span>Approved: <b id="n-ok">0</b></span> · <span>Rejected: <b id="n-rej">0</b></span>
+  <span class="spacer"></span>
+  <span class="muted">Editing checklist: use their name · cut filler · one specific film idea · AUD price anchor · one easy ask · keep every [n] fact sourced</span>
+</div>
+
+{% for d in drafts %}
+<div class="panel draft" style="margin-bottom:14px" data-company="{{ d.company }}">
+  <div class="row">
+    <span class="score {{ 's-hi' if d.fit_score >= 75 else 's-mid' if d.fit_score >= 50 else 's-lo' }}">{{ d.fit_score }}</span>
+    <h3 style="margin:0">#{{ d.rank }} {{ d.company }}</h3>
+    <span class="chip">{{ d.signal_date }}</span><span class="small">{{ d.signal }}</span>
+    <a class="small" href="{{ d.signal_source }}" target="_blank">source ↗</a>
+    <span class="spacer"></span>
+    <label style="margin:0;font-weight:500"><input type="checkbox" class="f-top5" {{ 'checked' if d.top5 }}> Top 5</label>
+    <label style="margin:0;font-weight:500"><input type="checkbox" class="f-showcase" {{ 'checked' if d.showcase }}> Before/after</label>
+    <select class="f-status" style="width:auto">
+      {% for s in ['Pending','Approve','Edit','Reject'] %}<option {{ 'selected' if d.status == s }}>{{ s }}</option>{% endfor %}
+    </select>
+    <span class="saved"></span>
+  </div>
+  <div class="editor" style="margin-top:10px">
+    <div>
+      <label>Before: tool draft</label>
+      <div class="small"><b>Subject:</b> {{ d.original_subject }}</div>
+      <div class="email" style="margin-top:6px">{{ d.original_body }}</div>
+      <label>Sources</label><div class="small">{{ d.sources|linkify }}</div>
+    </div>
+    <div>
+      <label>After: subject</label><input type="text" class="f-subject" value="{{ d.subject }}">
+      <label>After: email <span class="wc"></span></label><textarea class="f-body">{{ d.body }}</textarea>
+      <label>What I changed and why</label><textarea class="f-note" style="min-height:70px" placeholder="e.g. Opened with their report's headline number instead of a generic line; added AUD price anchor so the call is qualified.">{{ d.note }}</textarea>
+      <div class="grid g2">
+        <div><label>First name (optional)</label><input type="text" class="f-first" value="{{ d.first_name }}" placeholder="from a published page only"></div>
+        <div><label>Published business email (for hand-off)</label><input type="email" class="f-email" value="{{ d.email }}" placeholder="e.g. media@company.com.au"></div>
+      </div>
+    </div>
+  </div>
+</div>
+{% else %}
+<div class="panel muted">No drafts in this run. The tool writes a draft only when it finds a verified, dated timing signal.</div>
+{% endfor %}
+{% endblock %}
+{% block scripts %}
+<script>
+const saveUrl = "{{ url_for('save_edit', run_id=m.id) }}", MAX = {{ max_words }};
+const words = t => t.replace(/\[\d+\]/g, '').trim().split(/\s+/).filter(Boolean).length;
+function counts(){
+  const q = s => document.querySelectorAll(s);
+  document.getElementById('n-top').textContent = [...q('.f-top5')].filter(x=>x.checked).length;
+  document.getElementById('n-show').textContent = [...q('.f-showcase')].filter(x=>x.checked).length;
+  document.getElementById('n-ok').textContent = [...q('.f-status')].filter(x=>x.value==='Approve').length;
+  document.getElementById('n-rej').textContent = [...q('.f-status')].filter(x=>x.value==='Reject').length;
+}
+document.querySelectorAll('.draft').forEach(card => {
+  const $ = s => card.querySelector(s), wc = $('.wc');
+  const upd = () => { const n = words($('.f-body').value); wc.textContent = `${n} words`; wc.classList.toggle('over', n >= MAX); };
+  let timer;
+  const save = async () => {
+    const body = {company: card.dataset.company, subject: $('.f-subject').value, body: $('.f-body').value, note: $('.f-note').value,
+      status: $('.f-status').value, email: $('.f-email').value, first_name: $('.f-first').value,
+      top5: $('.f-top5').checked, showcase: $('.f-showcase').checked};
+    const r = await fetch(saveUrl, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)});
+    $('.saved').textContent = r.ok ? 'saved' : 'save failed';
+    setTimeout(() => $('.saved').textContent = '', 1500);
+  };
+  card.querySelectorAll('input,textarea,select').forEach(el => el.addEventListener('input', () => {
+    upd(); counts();
+    if ($('.f-body').value.trim() && $('.f-status').value === 'Pending' && el.classList.contains('f-body')) $('.f-status').value = 'Edit';
+    clearTimeout(timer); timer = setTimeout(save, 600);
+  }));
+  upd();
+});
+counts();
+</script>
+{% endblock %}

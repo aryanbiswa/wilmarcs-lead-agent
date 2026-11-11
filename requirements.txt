@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+trafilatura
+ddgs
+openpyxl
+python-dotenv
+pypdf
+rapidfuzz
+flask

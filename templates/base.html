@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Wilmarcs Lead Desk{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="{{ url_for('index') }}">Wilmarcs <span>Lead Desk</span></a>
+    <nav class="steps">
+      {% set rid = m.id if m is defined and m else None %}
+      <a href="{{ url_for('index') }}" class="{{ 'on' if step == 1 }}"><b>1</b>Upload list</a>
+      {% if rid %}
+      <a href="{{ url_for('run_page', run_id=rid) }}" class="{{ 'on' if step == 2 }}"><b>2</b>Research (Task 1)</a>
+      <a href="{{ url_for('review_page', run_id=rid) }}" class="{{ 'on' if step == 3 }}"><b>3</b>Edit drafts (Task 3)</a>
+      <a href="{{ url_for('plan_page', run_id=rid) }}" class="{{ 'on' if step == 4 }}"><b>4</b>Pilot plan</a>
+      <a href="{{ url_for('handoff_page', run_id=rid) }}" class="{{ 'on' if step == 5 }}"><b>5</b>Hand-off</a>
+      {% endif %}
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+{% block content %}{% endblock %}
+</main>
+<footer>Public sources only · every fact links to its page · nothing is sent from this tool</footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>
